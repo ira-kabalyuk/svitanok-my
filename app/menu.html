@@ -41,5 +41,35 @@
 				</li>
 			</ul>
 		</nav>
+		<div class="menu-order__block">
+			<span class="menu-order__button">Заказать услугу</span>
+			<div class="menu-order__form-wrap">
+				<form action="" class="menu-order__form">
+					<div class="input-wrap">
+						<input type="text" placeholder="Имя">
+					</div>
+					<div class="input-wrap">
+						<input type="text" placeholder="Телефон">
+					</div>
+					<div class="input-wrap">
+							<select>
+								<option data-display="Выберите услугу">Уборка</option>
+								<option value="1">Уборка квартир</option>
+								<option value="2">Уборка офиса</option>
+								<option value="3" disabled>Уборка коттеджей</option>
+								<option value="4">Эко уборка</option>
+							</select>
+					</div>
+					<div class="input-wrap">
+						<textarea type="text" placeholder="Комментарий к заказу"></textarea>
+					</div>
+					<button class="menu-order__form-button">Заказать услугу</button>
+				</form>
+			</div>
+		</div>
+		<div class="phone-block">
+			<a class="phone-num" href="tel:+380442569652"><i class="fa fa-phone" aria-hidden="true"></i>(044)256-96-52</a>
+			<a class="phone-num" href="tel:+380442298015">(044)229-80-15</a>
+		</div>
 	</div>
 	{% include "submenu.html" %}	

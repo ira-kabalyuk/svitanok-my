@@ -50,7 +50,17 @@ jQuery(document).ready(function() {
 	   to add border to right side
 	   of last tab */
 	$('ul.tabs li').last().addClass("tab_last");
+
+
+
+	//форма в меню
+
+	$(".menu-order__button").click(function( e ) {
+		e.stopPropagation();	
+		$(".menu-order__form-wrap").slideToggle(400);		
+	}); 
 	
+});
 
 
 
@@ -59,6 +69,8 @@ jQuery(document).ready(function() {
 
 
 
+
+jQuery(document).ready(function() {
 
   //slider
 $('.popup-gallery').slick({
