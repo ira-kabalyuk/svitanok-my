@@ -1,0 +1,42 @@
+$icon-font-path: '../fonts/';
+
+@import "_includs";
+
+html {
+	height: 100%;
+	//overflow-x: hidden; 
+}
+
+body {
+	font-family: 'Proxima Nova', sans-serif;
+	font-weight: 400;
+	color: $black;
+	background: #fff;	
+	min-width: 320px;
+	height: 100%;	
+	overflow-x: hidden;
+}
+
+.main {
+	width: calc(100% - 268px);
+	padding: 0 20px;
+	position: relative;
+	z-index: 1;
+	margin-left: 268px;
+	height: 100%;
+	
+    &:after {
+        content: "";
+        width: 7px;
+        height: 100%;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: -7px;
+        background: linear-gradient( to right, #e8f7fc, #fff);
+    }
+}
+
+.container {
+	max-width: 1010px;
+}

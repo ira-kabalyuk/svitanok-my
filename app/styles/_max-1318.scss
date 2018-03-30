@@ -1,0 +1,15 @@
+$icon-font-path: '../fonts/';
+
+@import "_includs";
+
+@media only screen and (max-width: 1318px) {
+    
+	.container {
+        width: 100%;
+    }	
+
+    .submenu {
+        max-width: 100%;
+    }
+
+}

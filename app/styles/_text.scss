@@ -1,0 +1,57 @@
+$icon-font-path: '../fonts/';
+
+@import "_includs";
+
+.light {
+	font-weight: 100;
+}
+
+.light-it {
+	font-weight: 100;
+	font-style: italic;
+}
+
+.normal {
+	font-weight: 400;
+}
+
+.normal-it {
+	font-weight: 400;
+	font-style: italic;
+}
+
+.sbd {
+	font-weight: 600;
+}
+
+.sbd-it {
+	font-weight: 600;
+	font-style: italic;
+}
+
+.bold {
+	font-weight: 700;
+}
+
+.bold-it {
+	font-weight: 700;
+	font-style: italic;
+}
+
+.e-bold {
+	font-weight: 800;	
+}
+
+.e-bold-it {
+	font-weight: 800;
+	font-style: italic;
+}
+
+.black {
+	font-weight: 900;
+}
+
+.black-it {
+	font-weight: 900;
+	font-style: italic;
+}

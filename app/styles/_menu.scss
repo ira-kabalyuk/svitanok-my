@@ -1,0 +1,238 @@
+$icon-font-path: '../fonts/';
+
+@import "_includs";
+
+.menu {
+    width: 268px;
+    padding: 28px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    z-index: 999;
+}
+
+.logo-wrap {
+    width: 100%;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+    }
+}
+
+.main-nav{
+    margin-top: 33px;
+
+    &__list {
+
+    }
+
+    &__item {
+        position: relative;
+        padding: 5px 0;
+
+         a {
+            display: flex;
+            align-items: flex-start;
+            font-size: 15px;
+            font-weight: 600;
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+
+            span {
+                color: $black;
+                display: inline-block;
+                margin-left: 22px;
+                
+                &:after {
+                    content:"";
+                    width: 78px;
+                    height: 1px;
+                    display: block;
+                    background: $clear-blue;
+                    margin-top: 17px; 
+                }
+            }
+
+            &:hover {
+                text-decoration: none;
+
+                span {
+                    color: $blue;
+                }
+            }
+         }
+
+         &:last-child {
+
+            a {
+
+                span {
+                    &:after {
+                        display: none;
+                    }
+                }
+            }
+         }
+
+         &.active {
+
+            a {
+                color: $blue;
+            }
+
+            &:after {
+                opacity: 1; 
+                transition: all 0s ease .4s;               
+            }
+           
+         }
+
+         &:after {
+            content: "";
+            display: block;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 11.5px 18px 11.5px 0;
+            border-color: transparent $blue transparent transparent;
+            position: absolute;
+            top: 50%;
+            margin-top: -22px;                
+            right: -22px;
+            opacity: 0;
+            //transition: all .5s ease .5s;
+        }
+    }
+
+    .icon-wrap {
+        width: 18px;
+    }
+}
+
+.nav {
+
+    &__list {
+        margin-top: 33px;
+        position: relative;
+
+        &:before {
+            content:"";
+            width: 55%;
+            height: 1px;
+            display: block;
+            background: $clear-blue;
+        }
+
+        a {
+            font-size: 15px;
+            color: $dark-gray;
+            font-weight: 400;
+
+            &:hover {
+                color: $blue;
+                text-decoration: none;
+            }
+        }
+    }
+
+    &__item {
+        padding: 5px 0;
+
+        &:first-child {
+            padding-top: 33px;
+        }
+
+        &.active {
+
+            a {
+                color: $blue;
+            }
+            
+         }
+    }
+}
+
+//submenu
+
+.tab_container {	
+    width: calc(100% - 268px + 7px);
+	background: $blue;
+    left: calc(268px - 7px);
+    top: 0;
+    opacity: 0;
+    z-index: -1;
+    position: absolute;   
+    transition: all .4s ease 0s;
+
+    &.visible {        
+        display: block;
+        z-index: 999;
+        opacity: 1;
+        position: relative;   
+        
+    }
+    
+}
+
+.tab_content {	
+    display: none;
+    position: relative;
+    
+    .fa-times {
+        color: $yellow;
+        font-size: 30px;
+        cursor: pointer;
+        position: absolute;
+        top: 75px;
+        right: 35px;
+    }
+}
+
+.tab_drawer_heading { display: none; }
+
+.submenu {
+    padding: 55px 35px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1025px;   
+
+    &__title {
+        font-size: 47px;
+        color: $yellow;
+        font-weight: 800;
+        width: 100%;
+        margin: 0 0 40px 55px;
+    }
+
+    &__list {
+      width: 33.3%;
+      padding: 0 55px; 
+      border-right: 1px solid #33b5e7;
+      
+      &:last-child {
+          border-right: none;
+      }
+    }
+
+    &__item {
+        margin: 9px 0;
+
+        &.title {
+            font-size: 24px;
+            font-weight: 700;
+            color: #fff;           
+            margin-bottom: 30px;
+        }
+
+        a {
+           color: #fff;
+           font-size: 16px; 
+        }
+    }
+}
+

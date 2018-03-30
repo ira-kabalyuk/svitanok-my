@@ -1,0 +1,32 @@
+$icon-font-path: '../fonts/';
+
+// bower:scss
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+@import "bower_components/hover/scss/hover.scss";
+// endbower
+
+@import "_reset";
+@import "_sprite";
+@import "_fonts";
+@import "_layuot";
+@import "_components";
+@import "_buttons";
+@import "_text";
+//@import "_animate";
+@import "_font-awesome";
+@import "_includs";
+
+@import "_menu";
+@import "_footer";
+@import "article";
+
+@import "_max-1318.scss";
+@import "_max-1210.scss";
+@import "_max-1025.scss";
+@import "_max-992.scss";
+@import "_max-767.scss";
+@import "_max-667.scss";
+@import "_max-540.scss";
+@import "_max-375.scss";
+
+
