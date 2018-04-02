@@ -3,8 +3,28 @@
 
 	{% block content %}
 	<main class="main main-page">
-		<section class="section">
-			
+		<section class="main-title-section width-block">
+			<div class="container min">
+				<div class="title-block__row">
+						<div class="col-50">
+							<h1 class="title deco-line">Первая клининговая компания Украины</h1>
+						</div>
+						<div class="col-50">
+							<h1 class="title-description deco-line__thin">Убираем в домах и квартирах,  в офисах, бизнес-центраз и HoReCa. Чистим мебель, шторы и ковры, моем окна и фасады.  Готовы выполнить абсолютно любые объекты по квадратуре, высоте и степени загрязнения в Киеве.</h1>
+							<button class="button yellow button--rayen">
+								<span class="arrow">Заказать услугу</span>
+							</button>
+						</div>
+				</div>				
+			</div>	
+		</section>
+		<section class="main-content-section">
+			<div class="container">
+				<ul class="content__list">
+					{{ myMacros.contentList(className="", imgPath1="images/img-1.jpg") }}
+					
+				</ul>
+			</div>
 		</section>
 	</main>
 	 {% endblock %} 

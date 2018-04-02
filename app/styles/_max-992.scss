@@ -4,4 +4,154 @@ $icon-font-path: '../fonts/';
 
 @media only screen and (max-width: 992px) {
 
+//menu
+
+    .menu {
+        //width: 100%;
+        position: static;
+        display: none;
+       display: none;
+
+        &.menu-open {
+           display: block;
+        }
+        
+    }
+
+    .logo-wrap {
+        display: none;
+    }
+
+    .main {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 80px;
+    }
+
+    .tabs {
+		display: none;
+    }
+
+    .tab_content {
+       
+        .fa-times {
+            top: 20px;
+            right: 20px;
+        }
+    }
+    
+    .tab_drawer_heading {
+        font-size: 16px;
+        font-weight: 600;
+        color: $black; 
+        display: block;
+        padding: 5px 0;
+        background: #fff;
+        cursor: pointer;
+        padding: 10px 35px 10px 28px;
+
+        &.active {
+            color: $blue;
+        }
+        
+        a {
+            color: #000;
+        }        
+
+        &:hover {
+            color: $blue;
+
+             a {
+                color: $blue;
+                text-decoration: none;
+             }
+        }
+    }
+
+    .tab_container {
+        width: 100%;
+        position: static;
+        opacity: 1;
+        margin-top: 80px;
+        display: none;
+
+        &.menu-open {
+            display: block;
+        }
+    }
+
+    .submenu {  
+        display: none !important;
+        
+        &.open {
+            display: flex !important;
+        }
+        
+        &.is-none {
+            display: none;
+        }
+        &__title {           
+            display: none;
+        }
+
+        &__list {
+            padding: 0 15px;
+        }
+    } 
+    
+    //end menu
+
+    //mobile-menu
+
+    .mobile-menu {
+        background: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: fixed;
+        padding: 0 20px;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 80px;
+        z-index: 999;
+
+        .logo-wrap {
+            display: block;
+            width: 115px;
+        }
+    }
+
+    .responsive-menu-icon {
+        cursor: pointer;
+
+        &__line {
+            width: 28px;
+            height: 5px;
+            background: $blue;
+            margin: 3px;
+            transition: all 0.5s ease;
+        }
+    }
+
+    .rotate-down {
+        margin-bottom: -1px;        
+         -ms-transform: rotate(45deg); /* IE 9 */
+          -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+          transform: rotate(45deg);
+      }
+      
+      .rotate-up {
+        margin-top: -15px;
+        -ms-transform: rotate(-45deg); /* IE 9 */
+          -webkit-transform: rotate(-45deg); /* Chrome, Safari, Opera */
+          transform: rotate(-45deg);
+        
+      }
+      
+      .disappear {
+        opacity: 0;
+      }
+
+      //end mobile menu
 }

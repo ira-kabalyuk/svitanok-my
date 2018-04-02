@@ -21,6 +21,7 @@ var src = {
     js: 'app/scripts/*.js',
     sass: 'app/styles/*.scss',
     images: 'app/images/*',
+    fonts: 'app/fonts/*',
     spriteImages: 'app/images/sprite/*.png',
     tmp: '.tmp/',
     dist: 'dist/',
@@ -67,6 +68,12 @@ gulp.task('scripts', function() {
         .pipe(browserSync.stream());
 });
 
+gulp.task('fonts', function() {
+    return gulp.src(src.fonts)
+        .pipe(gulp.dest(src.tmp + '/fonts'))
+        .pipe(browserSync.stream());
+});
+
 
 gulp.task('images', function() {
     return gulp.src(src.images)
@@ -83,7 +90,7 @@ gulp.task('nunjucks', function() {
         .pipe(browserSync.stream());
 });
 
-gulp.task('serve', ['styles', 'scripts', 'nunjucks', 'images'], function() {
+gulp.task('serve', ['styles', 'fonts', 'scripts', 'nunjucks', 'images'], function() {
     browserSync.init({
         server: {
             baseDir: [src.tmp],
@@ -116,7 +123,7 @@ gulp.task('clean', function() {
 });
 
 
-gulp.task('copy', ['sprite', 'styles', 'images'], function() {
+gulp.task('copy', ['sprite', 'styles', 'fonts', 'images'], function() {
     gulp.src(src.tmp + '/images/**/*')
         .pipe(gulp.dest(src.dist + '/images'));
 

@@ -4,5 +4,22 @@ $icon-font-path: '../fonts/';
 
 @media only screen and (max-width: 667px) {
 
+    .submenu {
+        flex-direction: column;
+
+        &__list {
+            width: 100%;
+            border-right: none;
+            padding: 5px 0;
+        }
+
+        &__item {
+
+            &.title {
+                font-size: 20px;
+                margin-bottom: 10px;
+            }
+        }
+    }
 
 }	

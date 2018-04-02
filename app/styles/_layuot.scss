@@ -8,7 +8,7 @@ html {
 }
 
 body {
-	font-family: 'Proxima Nova', sans-serif;
+	font-family: "Proxima Nova", sans-serif;
 	font-weight: 400;
 	color: $black;
 	background: #fff;	
@@ -18,8 +18,7 @@ body {
 }
 
 .main {
-	width: calc(100% - 268px);
-	padding: 0 20px;
+	width: calc(100% - 268px);	
 	position: relative;
 	z-index: 1;
 	margin-left: 268px;
@@ -39,4 +38,18 @@ body {
 
 .container {
 	max-width: 1010px;
+	padding: 0 20px;
+	position: relative;
+	z-index: 10;
+
+	&.min {
+		padding: 0 65px;
+	}
+}
+
+.width-block {
+	position: relative;
+    margin-left: -7px;
+    width: calc(100% + 7px);
+    z-index: 10;
 }

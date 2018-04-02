@@ -5,6 +5,34 @@ $icon-font-path: '../fonts/';
 
 @media only screen and (max-width: 767px) {
 
-	
+    .main-title-section {
+        padding: 60px 0;
+    }
+
+	.title-block {
+
+        &__row {
+            flex-direction: column;
+
+            .col-50 {
+                width: calc(100% - 134px);
+                margin-bottom: 30px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+    .deco-line {
+
+        &__thin {
+            
+            &:before {
+                width: 50%;
+            }
+        }
+    }
 }	
 
