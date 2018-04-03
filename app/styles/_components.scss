@@ -46,8 +46,21 @@ $icon-font-path: '../fonts/';
 	display: flex;
 }
 
+.col-20 {
+	width: 20%;
+}
+
+
+.col-40 {
+	width: 40%;
+}
+
 .col-50 {
 	width: 50%;
+}
+
+.col-100 {
+	width: 100%;
 }
 
 .deco-line {
@@ -74,4 +87,8 @@ $icon-font-path: '../fonts/';
 			margin-bottom: 20px;
 		}
 	}
+}
+
+.light-blue {
+	background: $light-blue;
 }

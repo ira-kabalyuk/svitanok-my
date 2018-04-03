@@ -1,16 +1,34 @@
 
-{% macro contentList(className="red blue", imgPath1="images/img-1.jpg") %}	
+{% macro contentList(
+className="",
+
+imgPath="",
+title="",
+text="Убираем в домах и квартирах, бизнес-центрах и HoReCa"
+
+) 
+%}	
 <li class="content__item">
 	<a href="">
 		<div class="img-wrap">   
-			<img src="{{imgPath1}}" alt="">    							
+			<img src="{{imgPath}}" alt="">    							
 		</div>
 		<div class="{{className}} content__item-descr">
-			
+			<p class="content-item-title">{{title}}</p>
+			<p class="content-item-text">{{text}}</p>
 		</div>
 	</a>
 </li>
-{% endmacro %}	
+{% endmacro %}
+
+{% macro mainTextSection(className="")%}
+	<section class="main-text-section {{className}}">		
+		{% include "main-text-section.html" %}
+	</section>	
+{% endmacro %}
+
+
+
 
 {% macro sidebar(className="sidebar", sidebarCalendarEvent=false, sidebarTagBlock=false, sidebarWorkBlock=false, sidebarVacansiesBlock=false, sidebarMainImgBlock=true, sidebarMainImgBlockNoCenter=false, sidebarBrandsBlock=false, sidebarProductBlock=false, sidebarExhibitionBlock=false, sidebarEventBlock=false, formblock=false, sidebarColBlock=true, sidebarImgBlock=true, sidebarPopBlock=true) %}
 	<sidebar class="{{className}}">		

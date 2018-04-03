@@ -4,5 +4,23 @@ $icon-font-path: '../fonts/';
 
 @media only screen and (max-width: 540px) {
 
+    .content {
+
+        &__item {
+            width: calc(100% - 30px);
+
+            .img-wrap {
+                height: 160px;
+            }
+            
+            .content-item-title {
+                font-size: 18px;
+            }
+        
+            .content-item-text {
+                font-size: 14px;
+            }
+        }
+    }
 
 }

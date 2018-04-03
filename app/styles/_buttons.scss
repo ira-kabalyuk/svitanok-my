@@ -27,15 +27,44 @@ $icon-font-path: '../fonts/';
         background: $yellow;
         color: $gray;
 
-        &.button--rayen::before {
-            background: $blue;            
+        &.button--rayen {
 
-            span {
-                color: #fff;
-               
+            &:before {
+                background: $blue;   
+            }
+
+            &:hover {
+
+                span {
+                    color: #fff;
+                   
+                }
             }
         }
 
+    }
+
+    &.trans-white {
+        background: transparent;
+        border: 2px solid #fff;
+        color: #fff;
+
+        &.button--rayen{
+
+            &:before {
+                background: $yellow; 
+                border: 2px solid $yellow;   
+            }
+
+            &:hover {
+                border: 2px solid $yellow;  
+
+                span {
+                    color: $gray;
+                   
+                }
+            }
+        }
     }
 }
 
@@ -90,7 +119,7 @@ $icon-font-path: '../fonts/';
     transform: translate3d(0, 100%, 0);
     position: relative;
     z-index: 10;
-    color: #fff;
+   // color: #fff;
 }
 
 @media only screen and (max-width: 540px) {	

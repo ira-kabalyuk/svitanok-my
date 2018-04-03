@@ -1,1 +1,146 @@
 @import "_includs";
+
+.footer {
+    background: $blue;
+    padding: 50px 0;
+    color: #fff;
+
+    .social-button-wrap {
+        margin-top: 30px;
+    }
+
+    &__list {
+        font-family: 'Roboto', sans-serif;
+        margin-top: 30px;
+    }
+
+    &__item {
+        margin: 9px 0;
+
+        &.title {
+            font-size: 24px;
+            font-weight: 700;
+            color: #fff;
+            position: relative;          
+            
+        }
+
+        a {
+            color: #b0daf3;
+            font-size: 16px;
+        }
+    }
+
+    .phone-block  {
+        font-family: 'Roboto', sans-serif;
+        
+        a {
+            margin: 10px 0;
+        }
+    }
+}
+
+.footer-col-wrap {
+    margin: 0 -20px;
+    display: flex;
+    flex-wrap: wrap;
+
+    .col-35 {
+        width: calc(35% - 40px);
+        margin: 0 20px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .copyright {
+            display: block;
+       } 
+    }
+    .col-20 {
+        width: calc(20% - 40px); 
+        margin: 0 20px;
+    }
+
+    .col-25 {
+        width: calc(25% - 40px); 
+        margin: 0 20px; 
+
+        &.flex {
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .copyright {
+            display: none;
+       }  
+    }
+}
+
+.subscribe {
+
+
+    &__title {
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 30px;
+    }
+
+    &__input-wrap {
+        width: 100%;
+        max-width: 320px;
+        position: relative;
+    }
+
+    &__input {
+        width: 100%;
+        border-radius: 40px;  
+        padding: 15px 87px 15px 30px;
+        height: 47px;
+        color: #fff;
+        border:none;
+        font-size: 16px;
+        color: $dark-gray;
+        font-style: italic;
+
+        &::-webkit-input-placeholder {color: #bebebe;}
+        &::-moz-placeholder          {color: #bebebe;}
+        &:-moz-placeholder           {color: #bebebe;}
+        &:-ms-input-placeholder      {color: #bebebe;}
+    }
+
+    &__button {
+        position: absolute;
+        background: $light-blue;
+        border-radius: 0 40px 40px 0;
+        height: 47px;
+        width: 64px;
+        border: none;
+        top: 0;
+        right: 0;
+
+        &:hover {
+            background: $yellow;
+        }
+    }
+}
+
+.copyright {
+    font-family: 'Roboto', sans-serif;
+    color: #b0daf3;
+    font-size: 14px;
+    font-weight: 500;
+    width: 100%;
+    margin-top: 30px;
+    
+}
+
+.footer-info {
+
+    &__block {
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        font-weight: 500;        
+        line-height: 1.5em;
+    }
+}

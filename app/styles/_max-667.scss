@@ -22,4 +22,19 @@ $icon-font-path: '../fonts/';
         }
     }
 
+    .content {
+
+        &__item {
+            width: calc(50% - 30px);
+        }
+    }
+
+    .row-wrap {
+
+        .col-50 {
+            width: calc(100% - 78px);
+            margin-bottom: 15px;  
+        }
+    }
+
 }	

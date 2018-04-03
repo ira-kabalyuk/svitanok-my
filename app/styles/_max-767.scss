@@ -22,6 +22,13 @@ $icon-font-path: '../fonts/';
                     margin-bottom: 0;
                 }
             }
+
+            .title {
+
+                .fa {
+                    display: none;
+                }
+            }
         }
     }
 
@@ -34,5 +41,85 @@ $icon-font-path: '../fonts/';
             }
         }
     }
-}	
 
+    .content {
+
+        &__list {
+            margin-top: -30px;
+        }
+    }
+
+
+//footer
+
+    .footer {
+        padding: 30px 0;
+
+        &__list {
+            display: none;
+            margin-top: 0;
+        }
+
+        &__item {
+
+            &.title {                
+                cursor: pointer;
+                display: inline-block;
+                
+                &:after {
+                    border-bottom: 2px solid #fff;
+                    border-right: 2px solid #fff;
+                    content: '';
+                    display: block;
+                    height: 7px;
+                    margin-top: -4px;
+                    pointer-events: none;
+                    position: absolute;
+                    right: -12px;
+                    top: 50%;                   
+                    transform-origin: 66% 66%;                   
+                    transform: rotate(45deg);
+                    transition: all 0.15s ease-in-out;
+                    width: 7px;
+                }
+            }
+        }
+    }
+
+    .footer-col-wrap {
+
+        .col-35,
+        .col-25,
+        .col-20, {
+            width: calc(100% - 40px); 
+        }
+
+        .col-35 {
+            margin-bottom: 30px;
+
+        .copyright {
+                display: none;
+            } 
+        }
+
+        .col-20 {
+            order: 1;
+            margin-bottom: 0;           
+        }
+
+        .col-25 {
+            order: 2;
+            margin-top: 20px;
+            border-top: 1px solid $clear-blue;
+            padding: 30px 0 0 0;     
+
+            .copyright {
+                display: block;
+                padding-top: 30px;
+                border-top: 1px solid $clear-blue;           
+            } 
+        }    
+    }
+
+
+}

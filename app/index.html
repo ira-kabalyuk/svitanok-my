@@ -7,7 +7,11 @@
 			<div class="container min">
 				<div class="title-block__row">
 						<div class="col-50">
-							<h1 class="title deco-line">Первая клининговая компания Украины</h1>
+							<h1 class="title deco-line">
+									Первая клининговая компания Украины
+									<i class="fa fa-long-arrow-down" aria-hidden="true"></i>
+							</h1>
+							
 						</div>
 						<div class="col-50">
 							<h1 class="title-description deco-line__thin">Убираем в домах и квартирах,  в офисах, бизнес-центраз и HoReCa. Чистим мебель, шторы и ковры, моем окна и фасады.  Готовы выполнить абсолютно любые объекты по квадратуре, высоте и степени загрязнения в Киеве.</h1>
@@ -21,10 +25,24 @@
 		<section class="main-content-section">
 			<div class="container">
 				<ul class="content__list">
-					{{ myMacros.contentList(className="", imgPath1="images/img-1.jpg") }}
-					
+					{{ myMacros.contentList(className="red", imgPath="images/img-1.jpg", title="Уборка квартир") }}
+					{{ myMacros.contentList(className="green", imgPath="images/img-2.jpg", title="Уборка офисов") }}
+					{{ myMacros.contentList(className="blue", imgPath="images/img-3.jpg", title="Уборка коттеджей") }}
+					{{ myMacros.contentList(className="blue", imgPath="images/img-4.jpg", title="Эко уборка") }}
+					{{ myMacros.contentList(className="red", imgPath="images/img-5.jpg", title="Мойка окон") }}
+					{{ myMacros.contentList(className="green", imgPath="images/img-6.jpg", title="Мойка витрин") }}
+					{{ myMacros.contentList(className="green", imgPath="images/img-7.jpg", title="Мойка фасадов") }}
+					{{ myMacros.contentList(className="blue", imgPath="images/img-8.jpg", title="Чистка ковров и ковролинов") }}
+					{{ myMacros.contentList(className="red", imgPath="images/img-9.jpg", title="Чистка мебели") }}
+					{{ myMacros.contentList(className="red", imgPath="images/img-10.jpg", title="Чистка жалюзи") }}
+					{{ myMacros.contentList(className="green", imgPath="images/img-11.jpg", title="Чистка штор") }}
+					{{ myMacros.contentList(className="blue", imgPath="images/img-12.jpg", title="Чистка одежды") }}
+					{{ myMacros.contentList(className="blue", imgPath="images/img-13.jpg", title="Чистка спецодежды") }}
+					{{ myMacros.contentList(className="red", imgPath="images/img-14.jpg", title="Прачечная") }}
 				</ul>
 			</div>
 		</section>
+		{{ myMacros.mainTextSection(className="light-blue width-block") }}
+		{% include "footer.html" %}	
 	</main>
 	 {% endblock %} 

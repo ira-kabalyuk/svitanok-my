@@ -15,22 +15,33 @@ $icon-font-path: '../fonts/';
         
         .col-50 {
             width: calc(50% - 134px);
-            margin: 0 68px;
+            margin: 0 68px;           
         }
 
         .button {
             margin-top: 30px;
+        }
+
+        .title {
+            position: relative;
+
+            .fa {
+                color: #bdd8e2;
+                position: absolute;
+                left: 0;
+                bottom: -60px;
+                font-size: 42px;
+            }
         }
     }    
 	
 }
 
 .main-content-section {
-    margin-top: -50px;
-
+    margin-bottom: 30px;
+    
     .container {
-        background: #fff;
-        padding: 0;
+        background: #fff;        
     }
     
 }
@@ -40,13 +51,12 @@ $icon-font-path: '../fonts/';
     &__list {
         display: flex;
         flex-wrap: wrap;
-        margin: 0 -15px;
-        width: calc(100% + 30px);
+        margin: -50px -15px 0;        
     }
 
     &__item {
         width: calc(33.33% - 30px);
-        margin: 0 15px 30px;
+        margin: 0 15px 40px;
 
         a {
             display: block;
@@ -54,10 +64,15 @@ $icon-font-path: '../fonts/';
             height: 100%; 
 
             &:hover {
+                text-decoration: none;
 
                 img {
                     transform: scale(1.1);
                     transition: all .5s;  
+                }
+
+                .content-item-title {
+                    text-decoration: underline;
                 }
             }
 
@@ -72,5 +87,49 @@ $icon-font-path: '../fonts/';
         .img-wrap {
             height: 200px;
         }
+
+        &-descr {
+            margin-top: 15px;
+            
+            &.red {                
+                .content-item-title {
+                    color: #ff2066;                
+                }    
+            }
+
+            &.green {               
+
+                .content-item-title {
+                    color: #99c426;             
+                }  
+            } 
+
+            &.blue {               
+
+                .content-item-title {
+                    color:$blue;            
+                }  
+            }
+        }
+
+        .content-item-title {
+            font-size: 20px;
+            font-weight: 800;
+            margin-bottom: 10px;           
+        }
+
+        .content-item-text {
+            font-size: 16px;
+            font-weight: 400;
+            color: $black;
+        }
+    }
+}
+
+.main-text-section {
+    padding: 57px 0;
+
+    .row-wrap {
+        margin-top: 25px;
     }
 }

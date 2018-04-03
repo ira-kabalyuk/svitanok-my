@@ -105,6 +105,14 @@ jQuery(document).ready(function() {
 	});
 
 
+	//footer
+
+	if ($('html').width() < 767) {
+
+		$(".footer__item.title").click(function() {
+			$(this).next(".footer__list").slideToggle(400);						
+		});
+	}
 	
 });
 
