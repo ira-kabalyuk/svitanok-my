@@ -18,6 +18,16 @@ $icon-font-path: '../fonts/';
             margin: 0 68px;           
         }
 
+        .col-33 {
+            width: calc(33.3% - 134px);
+            margin: 0 68px;           
+        }
+
+        .col-66 {
+            width: calc(66.6% - 134px);
+            margin: 0 68px;           
+        }
+
         .button {
             margin-top: 30px;
         }

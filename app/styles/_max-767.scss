@@ -23,6 +23,24 @@ $icon-font-path: '../fonts/';
                 }
             }
 
+            .col-33 {
+                width: calc(100% - 134px);
+                margin-bottom: 30px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+
+            .col-66 {
+                width: calc(100% - 134px);
+                margin-bottom: 30px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+
             .title {
 
                 .fa {

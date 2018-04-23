@@ -1,0 +1,33 @@
+	{% extends "template.html" %}	
+	{% import "macros.html" as myMacros %}
+
+	{% block content %}
+	<main class="main main-page">
+		<section class="main-title-section width-block">
+			<div class="container">
+				<div class="title-block__row">
+						<div class="col-33">
+							<h1 class="title deco-line">
+									Блог								
+							</h1>
+							
+						</div>
+						<div class="col-66">
+							<h1 class="title-description">Рассказываем о том, как быстро и просто изменить окружающее вас пространство к лучшему — самостоятельно или с помощью Світанок України.</h1>							
+						</div>
+				</div>				
+			</div>	
+		</section>
+		<section class="main-content-section">
+			<div class="container">
+				<div class="top-block">
+                    <div class="blog__list">
+
+                    </div>
+                </div>
+			</div>
+		</section>
+		
+		{% include "footer.html" %}	
+	</main>
+	 {% endblock %} 
