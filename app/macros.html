@@ -31,19 +31,71 @@ text="Убираем в домах и квартирах, бизнес-цент�
 	className="",	
 	imgPath="",
 	title="",
-	data=""	
+	data="",
+	showSubtitle=false,
+	showImgBlock=true,
+	showTileBlock=false	
 	) 
 	%}	
 	<li class="blog__item {{className}}">
+	{% if showImgBlock %}
 		<a href="">
 			<div class="img-wrap">   
 				<img src="{{imgPath}}" alt="">    							
 			</div>
 			<div class="blog__item-descr">
 				<p class="blog-item-title">{{title}}</p>
-				<p class="blog-item-text">{{data}}</p>
+				{% if showSubtitle %}	
+					<p class="blog-subtitle">Рассказываем, как сделать все возможное, чтобы свести риск к минимуму и не дать ворам обчистить вашу квартиру, пока вы загораете.</p>
+				{% endif %} 
+				<div class="blog__info-block">
+					<p class="blog-item-text"><i class="fa fa-calendar"></i> {{data}}</p>
+					<p class="blog-look"><i class="fa fa-eye"></i>255</p>
+				</div>
 			</div>
 		</a>
+	{% endif %}
+	
+	{% if showTileBlock %}
+		<ul class="tile__list">
+			<li class="tile__item">
+				<div class="img-wrap">
+					<img src="images/img-1.jpg" alt="">
+				</div>
+				<div class="tile-content-block">
+					<div class="tile-wrap">
+						<p class="tile-item-text"><i class="fa fa-calendar"></i>11 июля.2018</p>
+						<a href="" class="tile-title">Что нового в тарифе "Эконом"</a>
+					</div>
+					<p class="tile-look"><i class="fa fa-eye"></i>255</p>
+				</div>
+			</li>
+			<li class="tile__item">
+				<div class="img-wrap">
+					<img src="images/img-2.jpg" alt="">
+				</div>
+				<div class="tile-content-block">
+					<div class="tile-wrap">
+						<p class="tile-item-text"><i class="fa fa-calendar"></i>11 июля.2018</p>
+						<a href="" class="tile-title">Что нового в тарифе "Эконом"</a>
+					</div>
+					<p class="tile-look"><i class="fa fa-eye"></i>255</p>
+				</div>
+			</li>
+			<li class="tile__item">
+				<div class="img-wrap">
+					<img src="images/img-3.jpg" alt="">
+				</div>
+				<div class="tile-content-block">
+					<div class="tile-wrap">
+						<p class="tile-item-text"><i class="fa fa-calendar"></i>11 июля.2018</p>
+						<a href="" class="tile-title">Что нового в тарифе "Эконом"</a>
+					</div>
+					<p class="tile-look"><i class="fa fa-eye"></i>255</p>
+				</div>
+			</li>
+		</ul>
+	{% endif %}
 	</li>
 	{% endmacro %}
 

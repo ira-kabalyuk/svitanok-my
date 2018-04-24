@@ -3,7 +3,7 @@
 
 	{% block content %}
 	<main class="main main-page">
-		<section class="main-title-section width-block">
+		<section class="page-title-section width-block">
 			<div class="container">
 				<div class="title-block__row">
 						<div class="col-33">
@@ -21,9 +21,21 @@
 		<section class="main-content-section">
 			<div class="container">
 				<div class="top-block">
-                    <div class="blog__list">
-
-                    </div>
+                    <ul class="blog__list">
+						{{ myMacros.blogtList(className="col-33 min", imgPath="images/img-10.jpg", title="Как защитить дом от посторонних пока вы в отпуске", data="11 июля 2018") }}
+						{{ myMacros.blogtList(className="col-33 min", imgPath="images/img-11.jpg", title="Как защитить дом от посторонних пока вы в отпуске", data="11 июля 2018") }}
+						{{ myMacros.blogtList(className="col-33 min", imgPath="images/img-12.jpg", title='Что нового в тарифе "Эконом"', data="11 июля 2018") }}
+						{{ myMacros.blogtList(className="col-66", imgPath="images/img-15.jpg", title='Что нового в тарифе "Эконом"', data="11 июля 2018", showSubtitle=true) }}
+						{{ myMacros.blogtList(className="col-33", showImgBlock=false, showTileBlock=true) }}
+						{{ myMacros.blogtList(className="col-33 min", imgPath="images/img-10.jpg", title="Как защитить дом от посторонних пока вы в отпуске", data="11 июля 2018") }}
+						{{ myMacros.blogtList(className="col-33 min", imgPath="images/img-11.jpg", title="Как защитить дом от посторонних пока вы в отпуске", data="11 июля 2018") }}
+						{{ myMacros.blogtList(className="col-33 min", imgPath="images/img-12.jpg", title='Что нового в тарифе "Эконом"', data="11 июля 2018") }}
+						{{ myMacros.blogtList(className="col-33", showImgBlock=false, showTileBlock=true) }}
+						{{ myMacros.blogtList(className="col-66", imgPath="images/img-15.jpg", title='Что нового в тарифе "Эконом"', data="11 июля 2018", showSubtitle=true) }}
+					</ul>
+					<div class="link-block mt">
+						<a href="" class="content-link">Смотреть все статьи</a>
+					</div>
                 </div>
 			</div>
 		</section>

@@ -85,6 +85,31 @@ $icon-font-path: '../fonts/';
 	}
 }
 
+.link-block {
+	width: 100%;
+	text-align: center;
+
+	&.mt {
+		margin-top: 15px;
+	}
+
+	&.mb {
+		margin-bottom: 15px;
+	}
+}
+
+.content-link{
+	font-size: 18px;
+	font-weight: 800;
+	color: $blue;
+	text-decoration: underline;
+
+	&:hover {
+		color: $blue;
+		text-decoration: none;	
+	}
+}
+
 @media only screen and (max-width: 1120px) {	
     
    .title {

@@ -6,15 +6,190 @@ $icon-font-path: '../fonts/';
 
     &__list {
         display: flex;
+        flex-wrap: wrap;
         margin: 0 -9px;
+        list-style: none;
     }
 
     &__item {
-        margin: 0 -9px;
+        margin: 0 9px;
         width: calc(66.6% - 18px);
+        margin-bottom: 18px;
+        height: 460px;
+      
+        a {
+            position: relative;
+            display: block;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            padding: 15px;
+
+            &:hover {
+
+                img {
+                    transform: scale(1.1);
+                    transition: all .5s;  
+                }
+            }
+
+            &:not(:hover) {
+
+                img {                    
+                    transition: all .5s;  
+                }
+            }
+
+            .img-wrap {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                
+                &:after {
+                    content:"";
+                    background: rgba(38, 84, 100, 0.5);
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 50%;                
+                }
+    
+                &:before {
+                    content: "";
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 50%;
+                    background: rgba(42, 75, 86, 0.5);
+                    background-position: 0 100%;
+                    z-index: 1;
+                }
+            }
+        }        
+
+        &.col-33 {
+            width: calc(33.3% - 18px);           
+        }
+
+        &.col-66 {
+            width: calc(66.6% - 18px);
+        }
 
         &.min {
-            width: calc(33.3% - 18px);
+            height: 200px;
+        }
+    }
+
+    &__item-descr {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 15px; 
+        z-index: 10;      
+    }
+
+    &__info-block {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .fa {
+            font-size: 10px;
+            margin-right: 5px;
         }
     }
 }
+
+.blog-item-title {
+    width: 100%;
+    font-size: 18px;
+    font-weight: 800;
+    color: #fff;
+    margin-bottom: 10px;   
+}
+
+.blog-item-text,
+.blog-look {
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    opacity: 0.8; 
+    display: flex;
+    align-items: center;   
+}
+
+.blog-subtitle {
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+}
+
+
+.tile {
+
+    &__list {
+        min-height: 100%;      
+    }
+
+    &__item {
+        display: flex;        
+        height: 141px;
+        margin-bottom: 18px;        
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        .img-wrap {
+            width: 154px;
+            flex-basis: auto;
+            flex-shrink:0; 
+            position: static;
+            margin-right: 20px;
+        }
+
+        
+        .tile-title {
+            position: static;
+            height: auto;
+            font-size: 18px;
+            color: $black;
+            font-weight: 800;
+            padding: 0;
+            height: 69px;
+            overflow: hidden;
+            margin-top: 10px;
+
+            &:hover {
+                color: $black;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.tile-content-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}        
+
+.tile-item-text,
+.tile-look {
+        font-size: 14px;
+        color: $gray;
+
+        .fa {
+            margin-right: 5px;
+        }
+    }

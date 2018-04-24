@@ -67,6 +67,53 @@ $icon-font-path: '../fonts/';
         }
     }
 
+    //blog
+
+    .blog {
+
+        &__list {
+
+        }
+
+        &__item {            
+
+            &.col-33 {
+                width: calc(100% - 18px);
+            }
+
+            &.col-66 {
+                width: calc(100% - 18px);
+            }
+        }
+    }
+
+    .blog-item-title {
+        font-size: 16px;
+    }
+
+    .blog-item-text,
+    .blog-look,
+    .tile-item-text,
+    .tile-look {
+        font-size: 12px;
+    }
+
+    .blog-subtitle {
+        font-size: 14px;
+    }
+
+    .tile {
+
+        &__item {
+
+            .tile-title {
+                font-size: 16px;
+            }
+        }
+    }
+
+    //end-blog
+
 
 //footer
 
