@@ -8,7 +8,7 @@ $icon-font-path: '../fonts/';
     text-align: center;
     font-size: 16px;
     font-weight: 500;
-    color: $gray;
+    color: $dark-gray;
     cursor: pointer;
     border-radius: 40px;
     width: 100%;
@@ -25,7 +25,7 @@ $icon-font-path: '../fonts/';
     
     &.yellow {
         background: $yellow;
-        color: $gray;
+        color: $dark-gray;
 
         &.button--rayen {
 
@@ -60,11 +60,23 @@ $icon-font-path: '../fonts/';
                 border: 2px solid $yellow;  
 
                 span {
-                    color: $gray;
+                    color: $dark-gray;
                    
                 }
             }
         }
+    }
+
+    &.md {
+        max-width: 200px;
+    }
+
+    &.mt {
+        margin-top: 20px;
+    }
+
+    &.mb {
+        margin-bottom: 20px;
     }
 }
 

@@ -108,7 +108,7 @@ $icon-font-path: '../fonts/';
         display: flex;
         align-items: center;
         justify-content: space-between;
-        position: fixed;
+        position: absolute;
         padding: 0 20px;
         top: 0;
         left: 0;
@@ -154,4 +154,16 @@ $icon-font-path: '../fonts/';
       }
 
       //end mobile menu
+
+      //calc-pages    
+      .servises {
+  
+          &__item {
+              width: 50%;  
+                      
+          }
+      }
+  
+  
+      //end-calc-pages
 }

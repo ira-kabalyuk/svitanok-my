@@ -1,0 +1,141 @@
+	{% extends "template.html" %}	
+	{% import "macros.html" as myMacros %}
+
+	{% block content %}
+	<main class="main main-page">
+		<section class="page-title-section width-block">
+			<div class="container">
+				<div class="title-block__row">
+						<div class="col-66">
+							<h1 class="title md deco-line black">
+									Что входит в уборку							
+							</h1>
+							
+						</div>
+						<div class="col-33 flex aife">
+							<h2 class="subtitle"><span>1</span>/4 детали</h2>							
+						</div>
+				</div>				
+			</div>	
+		</section>
+		<section class="main-content-section">
+			<div class="container">
+				<div class="top-block">
+				   <div class="colwrap shadow white">
+					   <div class="left-col">
+							<div class="block mb">
+								<p class="text-16 bold mb">Мы наведем порядок в квартире, вымоем варочную панель и СВЧ.</p>
+								<div class="counter__list">
+									<div class="counter__item">
+										<div class="counter-wrap">
+											<span class="counter__icon-wrap">
+												<i class="fa fa-plus"></i> 
+											</span>
+											<p class="counter__name"><span>1</span> комната</p>
+											<span class="counter__icon-wrap">
+												<i class="fa fa-minus"></i> 
+											</span>
+										</div>
+										<div class="counter-link-block">
+											<a href="" class="counter-link">Почему комнаты, а не метры</a>
+										</div>
+									</div>
+									<div class="counter__item">
+										<div class="counter-wrap">
+											<span class="counter__icon-wrap">
+												<i class="fa fa-plus"></i> 
+											</span>
+											<p class="counter__name"><span>1</span> комната</p>
+											<span class="counter__icon-wrap">
+												<i class="fa fa-minus"></i> 
+											</span>
+										</div>
+										<div class="counter-link-block">
+											<a href="" class="counter-link">Что считается санузлом?</a>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="block mb">
+								<h2 class="content-title">Дополнительные услуги</h2>
+								<ul class="servises__list">
+									{{ myMacros.servisesList(className="item-1", title="Посуда") }}
+									{{ myMacros.servisesList(className="item-2", title="Холодильник") }}
+									{{ myMacros.servisesList(className="item-3", title="Кухонные шкафы") }}
+									{{ myMacros.servisesList(className="item-4", title="Духовка") }}
+									{{ myMacros.servisesList(className="item-5", title="Гардероб") }}
+									{{ myMacros.servisesList(className="item-6", title="Глажка") }}								
+									{{ myMacros.servisesList(className="item-7", title="Питомец") }}
+									{{ myMacros.servisesList(className="item-8", title="Балкон") }}
+									{{ myMacros.servisesList(className="item-9", title="Окно") }}
+								</ul>	
+							</div>
+							<div class="block mb">
+								<h2 class="content-title mb">Услуги от партнеров</h2>
+								<p class="text-16">Чтобы сделать Вашу жизнь проще, мы организуем химчистку вещей и доставку еды. Наш клинер отдаст курьеру из химчистки нужные вещи, встретит доставку с едой и аккуратно разложит продукты в холодильнике.</p>
+								<ul class="servises__list partner">
+									{{ myMacros.servisesList(className="item-10", title="Посуда") }}
+									{{ myMacros.servisesList(className="item-11", title="Холодильник") }}									
+								</ul>
+								<button class="button yellow button--rayen md mt mb">
+									<span>Далее</span>
+								</button>
+								<div class="link-block mt desct-none left">
+									<a href="" class="content-link">Вернуться назад</a>
+								</div>	
+							</div>
+							<div class="block">
+								<h2 class="content-title mb">Ответы на наиболее важные вопросы</h2>
+								<ul class="faq-list" id="accordion">
+									<li class="faq-item">
+										<div class="faq-title">
+											<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+												Безопасно ли оплачивать услуги на сайте Qlean?
+											</a>
+										</div>
+										<div id="collapseOne" class="panel-collapse collapse">
+											<div class="faq-body">
+												Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+											</div>
+										</div>
+									</li>
+									<li class="faq-item">
+										<div class="faq-title">										
+											<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+													Я знаю, что платить банковской картой удобно, но можно мне расплатиться наличными?
+											</a>										
+										</div>
+										<div id="collapseTwo" class="panel-collapse collapse">
+											<div class="faq-body">
+													Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+											</div>
+										</div>
+									</li>
+									<li class="faq-item">
+										<div class="faq-title">
+											<a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+													Что за SMS о списании мне пришла за 2 часа<br>до начала уборки?
+											</a>
+										</div>
+										<div id="collapseThree" class="panel-collapse collapse">
+											<div class="faq-body">
+												Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+											</div>
+										</div>
+									</li>
+								</ul>
+								<div class="link-block mt desct-none left">
+									<a href="" class="content-link">Смотреть все</a>
+								</div>
+							</div>
+					   </div> 
+					   {% include "right-column.html" %}	 
+				   </div>
+				</div>
+			</div>
+		</section>
+		
+		{% include "footer.html" %}	
+	</main>
+	 {% endblock %} 

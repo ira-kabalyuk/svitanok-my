@@ -56,46 +56,96 @@ text="Убираем в домах и квартирах, бизнес-цент�
 		</a>
 	{% endif %}
 	
-	{% if showTileBlock %}
-		<ul class="tile__list">
-			<li class="tile__item">
-				<div class="img-wrap">
-					<img src="images/img-1.jpg" alt="">
+{% if showTileBlock %}
+	<ul class="tile__list">
+		<li class="tile__item">
+			<div class="img-wrap">
+				<img src="images/img-1.jpg" alt="">
+			</div>
+			<div class="tile-content-block">
+				<div class="tile-wrap">
+					<p class="tile-item-text"><i class="fa fa-calendar"></i>11 июля.2018</p>
+					<a href="" class="tile-title">Что нового в тарифе "Эконом"</a>
 				</div>
-				<div class="tile-content-block">
-					<div class="tile-wrap">
-						<p class="tile-item-text"><i class="fa fa-calendar"></i>11 июля.2018</p>
-						<a href="" class="tile-title">Что нового в тарифе "Эконом"</a>
-					</div>
-					<p class="tile-look"><i class="fa fa-eye"></i>255</p>
+				<p class="tile-look"><i class="fa fa-eye"></i>255</p>
+			</div>
+		</li>
+		<li class="tile__item">
+			<div class="img-wrap">
+				<img src="images/img-2.jpg" alt="">
+			</div>
+			<div class="tile-content-block">
+				<div class="tile-wrap">
+					<p class="tile-item-text"><i class="fa fa-calendar"></i>11 июля.2018</p>
+					<a href="" class="tile-title">Что нового в тарифе "Эконом"</a>
 				</div>
-			</li>
-			<li class="tile__item">
-				<div class="img-wrap">
-					<img src="images/img-2.jpg" alt="">
+				<p class="tile-look"><i class="fa fa-eye"></i>255</p>
+			</div>
+		</li>
+		<li class="tile__item">
+			<div class="img-wrap">
+				<img src="images/img-3.jpg" alt="">
+			</div>
+			<div class="tile-content-block">
+				<div class="tile-wrap">
+					<p class="tile-item-text"><i class="fa fa-calendar"></i>11 июля.2018</p>
+					<a href="" class="tile-title">Что нового в тарифе "Эконом"</a>
 				</div>
-				<div class="tile-content-block">
-					<div class="tile-wrap">
-						<p class="tile-item-text"><i class="fa fa-calendar"></i>11 июля.2018</p>
-						<a href="" class="tile-title">Что нового в тарифе "Эконом"</a>
-					</div>
-					<p class="tile-look"><i class="fa fa-eye"></i>255</p>
-				</div>
-			</li>
-			<li class="tile__item">
-				<div class="img-wrap">
-					<img src="images/img-3.jpg" alt="">
-				</div>
-				<div class="tile-content-block">
-					<div class="tile-wrap">
-						<p class="tile-item-text"><i class="fa fa-calendar"></i>11 июля.2018</p>
-						<a href="" class="tile-title">Что нового в тарифе "Эконом"</a>
-					</div>
-					<p class="tile-look"><i class="fa fa-eye"></i>255</p>
-				</div>
-			</li>
-		</ul>
-	{% endif %}
-	</li>
-	{% endmacro %}
+				<p class="tile-look"><i class="fa fa-eye"></i>255</p>
+			</div>
+		</li>
+	</ul>
+{% endif %}
+</li>
+{% endmacro %}
+
+{% macro servisesList(
+className="",		
+title=""	
+) 
+%}	
+<li class="servises__item {{className}} ">
+	<div class="servises__item-wrap">
+		<i class="servises-icon"></i>
+		<div class="servises__item-descr">
+			<p class="servises-item-title">{{title}}</p>
+			<a href="" class="link">Подробнее</a>
+		</div>
+	</div>
+</li>
+{% endmacro %}
+
+{% macro priceList(			
+	title="",			
+	sum="",
+	name="",
+
+	showSubtitle=false,
+	showLink=false,
+	showTwolist=false
+	) 
+	%}	
+	<div class="price__block">
+		<p class="price__title">{{title}}
+			{% if showLink %}	
+				<a href="" class="price-link">Что это?</a>
+			{% endif %} 
+		</p>
+		<div class="price__item">
+			<span class="price__name">{{name}}</span>
+			<span class="price__sum">{{sum}}</span>			
+		</div>
+		{% if showTwolist %}
+		<div class="price__item">
+				<span class="price__name">Чистка ковролина</span>
+				<span class="price__sum">1500 грн</span>
+				
+			</div>
+		{% endif %}
+		{% if showSubtitle %}
+			<span class="price__subtitle">(1 санузел)</span>
+		{% endif %} 
+	</div>
+{% endmacro %}
+
 

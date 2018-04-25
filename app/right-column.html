@@ -1,0 +1,23 @@
+{% import "macros.html" as myMacros %}
+
+<div class="right-col blue">
+	<div class="block">           
+		<p class="subtitle">Итого</p>
+		{{ myMacros.priceList(title="Основное", name="Однокомнатная квартира", sum="250 грн", showSubtitle=true) }}
+		{{ myMacros.priceList(title="Дополнительно", name="Духовка", sum="3000 грн", showSubtitle=false, showTwolist=true) }}
+		{{ myMacros.priceList(title="Длительность уборки", name="2 часа 20 мин.") }}
+		{{ myMacros.priceList(title="Начислено баллов", name="0 баллов", showLink=true) }}
+		<div class="form-wrap">
+			<form action="" class="promo-form">
+				<input type="text" class="promo-input" placeholder="Промокод">
+				<button class="promo-button trans">Применить</button>
+			</form>	
+		</div>			
+	</div>
+	<div class="block">
+		<div class="subtitle-wrap">
+			<p class="subtitle">К оплате</p>
+
+		</div>
+	</div>
+</div> 

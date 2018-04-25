@@ -9,6 +9,10 @@ $icon-font-path: '../fonts/';
         padding: 60px 0;
     }
 
+    .page-title-section  {
+        padding: 50px 0 135px;
+    }
+
 	.title-block {
 
         &__row {
@@ -58,6 +62,10 @@ $icon-font-path: '../fonts/';
                 width: 50%;
             }
         }
+
+        &.min {
+            width: 33.3%;
+        }
     }
 
     .content {
@@ -75,7 +83,8 @@ $icon-font-path: '../fonts/';
 
         }
 
-        &__item {            
+        &__item {
+            margin-bottom: 9px;            
 
             &.col-33 {
                 width: calc(100% - 18px);
@@ -113,6 +122,27 @@ $icon-font-path: '../fonts/';
     }
 
     //end-blog
+
+    //calc-pages
+
+    .left-col {
+      width: 100%;    
+    }
+
+    .right-col {
+        width: 100%;
+        margin: 0;
+    }
+
+    .servises {
+
+        &__item {             
+            height: 80px;          
+        }
+    }
+
+
+    //end-calc-pages
 
 
 //footer
