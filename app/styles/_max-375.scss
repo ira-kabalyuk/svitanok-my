@@ -4,8 +4,23 @@ $icon-font-path: '../fonts/';
 
 @media only screen and (max-width: 375px) {
 
+    .title-block {
+
+        .col-40 {
+            padding: 0;
+        }
+    }
+
 	.button {
         max-width: 100%;
+    }
+
+    .calc {
+        
+        &__item {
+            margin: 10px 0;
+            width: 100%;
+        }
     }
 }
 

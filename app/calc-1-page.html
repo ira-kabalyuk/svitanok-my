@@ -2,22 +2,9 @@
 	{% import "macros.html" as myMacros %}
 
 	{% block content %}
-	<main class="main main-page">
-		<section class="page-title-section width-block">
-			<div class="container">
-				<div class="title-block__row">
-						<div class="col-66">
-							<h1 class="title md deco-line black">
-									Что входит в уборку							
-							</h1>
-							
-						</div>
-						<div class="col-33 flex aife">
-							<h2 class="subtitle"><span>1</span>/4 детали</h2>							
-						</div>
-				</div>				
-			</div>	
-		</section>
+	<main class="main calc-page">
+			{{ myMacros.headCalc(text="1") }}
+
 		<section class="main-content-section">
 			<div class="container">
 				<div class="top-block">
@@ -85,55 +72,20 @@
 									<a href="" class="content-link">Вернуться назад</a>
 								</div>	
 							</div>
+							
 							<div class="block">
 								<h2 class="content-title mb">Ответы на наиболее важные вопросы</h2>
-								<ul class="faq-list" id="accordion">
-									<li class="faq-item">
-										<div class="faq-title">
-											<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-												Безопасно ли оплачивать услуги на сайте Qlean?
-											</a>
-										</div>
-										<div id="collapseOne" class="panel-collapse collapse">
-											<div class="faq-body">
-												Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-											</div>
-										</div>
-									</li>
-									<li class="faq-item">
-										<div class="faq-title">										
-											<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
-													Я знаю, что платить банковской картой удобно, но можно мне расплатиться наличными?
-											</a>										
-										</div>
-										<div id="collapseTwo" class="panel-collapse collapse">
-											<div class="faq-body">
-													Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-											</div>
-										</div>
-									</li>
-									<li class="faq-item">
-										<div class="faq-title">
-											<a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
-													Что за SMS о списании мне пришла за 2 часа<br>до начала уборки?
-											</a>
-										</div>
-										<div id="collapseThree" class="panel-collapse collapse">
-											<div class="faq-body">
-												Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-											</div>
-										</div>
-									</li>
-								</ul>
-								<div class="link-block mt desct-none left">
-									<a href="" class="content-link">Смотреть все</a>
-								</div>
+								{% include "faq-block.html" %}
 							</div>
+								
+							<div class="link-block mt desct-none left">
+								<a href="" class="content-link">Смотреть все</a>
+							</div>	
 					   </div> 
 					   {% include "right-column.html" %}	 
 				   </div>
 				</div>
-			</div>
+			
 		</section>
 		
 		{% include "footer.html" %}	

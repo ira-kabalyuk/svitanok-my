@@ -104,7 +104,6 @@ jQuery(document).ready(function() {
 			$(".menu").toggleClass("menu-open");		   
 	});
 
-
 	//footer
 
 	if ($('html').width() < 767) {
@@ -113,8 +112,81 @@ jQuery(document).ready(function() {
 			$(this).next(".footer__list").slideToggle(400);						
 		});
 	}
+
+
+	$('.js-datepicker').datepicker({
+		altField: ".content-input", // селектор элемента куда будет выводится выбранная дата
+		dateFormat: "dd",		
+		autoSize: true,	
+	}); 
+
+	$('.slider').slick({
+		infinite: true,
+		dots: true,
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		arrows: false,
+
+		responsive: [{
+
+			breakpoint: 1024,
+			settings: {
+			  slidesToShow: 2			  
+			}
+	  
+		  }, {
+	  
+			breakpoint: 540,
+			settings: {
+			  slidesToShow: 1,			  
+			}
+	  
+		  }]
+		});
+		
+		$('.feedback-slider').slick({
+			infinite: true,
+			dots: false,
+			slidesToShow: 2,
+			slidesToScroll: 1,
+			arrows: false,
+			accessibility: false,
+	
+			responsive: [{			
+			
+				breakpoint: 767,
+				settings: {
+					slidesToShow: 1,
+					dots: true,	
+					arrows: false,		  
+				}
+
+				}]
+				
+			});	
+
+			$('.prev-button').click(function(){
+				$('.feedback-slider').slick('slickPrev');
+			});
+		
+				$('.next-button').click(function(){
+				$('.feedback-slider').slick('slickNext');
+			});
+	
+
+		$(".js-add-clean").click(function() {
+			$(".clean-popup").addClass("popup-show");						
+		});
+		
+		$(".js-popup-close").click(function() {
+			$(".clean-popup").removeClass("popup-show");						
+		});
+
+		objectFitImages();
 	
 });
+
+
 
 
 

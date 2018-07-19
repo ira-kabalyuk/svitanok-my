@@ -127,6 +127,18 @@ $icon-font-path: '../fonts/';
     align-items: center;   
 }
 
+.blog-item-text {
+
+    &.white {
+      opacity: 1;  
+    }
+
+    .fa {
+        font-size: 10px;
+        margin-right: 5px;
+    }
+}
+
 .blog-subtitle {
     margin-bottom: 15px;
     font-size: 16px;
@@ -193,3 +205,12 @@ $icon-font-path: '../fonts/';
             margin-right: 5px;
         }
     }
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+
+    .tile-content-block {
+        display: block;      
+        height: 100%;
+    }
+}
+

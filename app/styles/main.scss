@@ -8,6 +8,13 @@ $icon-font-path: '../fonts/';
 @import "_reset";
 @import "_sprite";
 @import "_fonts";
+
+@import "jquery-ui";
+@import "jquery-ui.theme";
+@import "_datepicker";
+@import "slick-theme";
+@import "slick";
+
 @import "_layuot";
 @import "_components";
 @import "_buttons";
@@ -24,6 +31,14 @@ $icon-font-path: '../fonts/';
 @import "_main-page";
 @import "_blog-page";
 @import "_calc-page";
+@import "_right-col";
+@import "_inputs";
+@import "_contacts";
+@import "_text-pages";
+@import "_servises-pages";
+@import "_filter-block";
+@import "_faq-page";
+@import "_popups";
 
 @import "_max-1318.scss";
 @import "_max-1120.scss";

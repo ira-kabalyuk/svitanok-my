@@ -4,13 +4,7 @@ $icon-font-path: '../fonts/';
 
 @media only screen and (max-width: 667px) {
 
-    .desct-none {
-        display: block;
-    }
-
-    .mob-none {
-        display: none;
-    }
+    
 
     //menu
 
@@ -37,13 +31,19 @@ $icon-font-path: '../fonts/';
         &__item {
             width: calc(50% - 30px);
         }
-    }
+		}
+		
+		
 
     .row-wrap {
 
         .col-50 {
             width: calc(100% - 78px);
             margin-bottom: 15px;  
+        }
+
+        .col-25 {
+            width: calc(100% - 78px);            
         }
     }
 
@@ -99,7 +99,177 @@ $icon-font-path: '../fonts/';
 
     .faq-body {
         font-size: 14px;
+		}
+		
+		.control {
+			font-size: 12px;
+        }
+
+        
+    .thank-block {
+
+        &__title {
+           font-size: 30px; 
+        }
+
+        &__text {
+            font-size: 18px;
+        }
     }
+
+    //contacts
+
+    .content-form-wrap {
+
+        &.light-blue {
+            padding: 20px 30px;
+        }
+    }
+
+    .contacts-block {
+        padding: 30px 10px; 
+    }    
+
+    .contact-text {
+        font-size: 18px;
+    }
+
     //calc-pages-end
+
+    //text-page
+
+    .color-title-wrap {
+        padding-top: 30px;
+    }
+
+    .color-title {
+
+        &__sublitle {
+            font-size: 16px;
+        }
+    }
+
+    .text-title-section  {
+        height: 270px;
+    }    
+
+    //end text page
+
+    //servises-page
+
+    .clean-list-heading {
+
+        a {
+            font-size: 22px;
+        }
+    }
+
+    .clean {
+
+        &__list {
+
+            &.min {
+
+                .clean__item  {
+                    font-size: 14px;
+                }
+            }
+        }
+
+        &__item {
+         font-size: 16px;   
+        }
+    }
+
+    .advant {
+    
+        &__item {
+            width: calc(100% - 30px);
+           display: flex;
+           flex-wrap: wrap;
+           margin: 15px;
+        }
+    
+        &__title {
+            margin: 0 0 15px 30px;
+        }
+    
+        &__text {
+            font-size: 16px;
+            color: $dark-gray;
+            width: 100%
+        }
+    }
+
+    .price-table-wrap {
+        overflow-x: hidden;
+        
+        .price-table {
+          display: inline-block;       
+          max-width: 100%;
+          overflow-x: auto;
+          white-space: nowrap;
+        }
+      }
+
+      .feedback-name-wrap {
+          font-size: 14px;
+          margin-left: 30px;
+      }
+
+      .feedback-title {
+        margin-left: 30px; 
+      }
+
+      .feedback-text {
+          font-size: 14px;
+      }
+
+      .plant {
+
+        &__text {
+            font-size: 16px;
+            text-align: center;
+        }
+      }
+
+    //servises-page
+
+      //faq-page
+
+   .faq-section {  
+       
+    .faq-tabs-item {
+        padding: 30px 40px;
+
+        &.mobile {
+
+            .faq-tabs-item-wrap {
+
+                a {
+                    font-size: 18px;
+                }
+            }
+        }
+    }   
+
+        .faq-tabs-text {
+            font-size: 14px;
+            margin-top: 0;
+        }
+    }
+
+     //faq-page end
+
+    .thank-popup {
+
+        .thank-modal-text {
+            font-size: 16px;
+        }
+
+        .content-link{
+            font-size: 16px; 
+        }
+    }
 
 }	

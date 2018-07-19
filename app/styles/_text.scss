@@ -56,12 +56,43 @@ $icon-font-path: '../fonts/';
 	font-style: italic;
 }
 
+.it {
+	font-style: italic;
+}
+
+.ttu {
+	text-transform: uppercase;
+}
+
 .title {
 	font-size: 60px;
 	font-weight: 800;
 
-	&_md {
+	&.md {
 		font-size: 55px;
+		font-weight: 800;
+	}
+
+	&.sm {
+		font-size: 30px;
+		font-weight: 800;
+	}
+
+	&.mt {
+		margin-top: 15px;
+	}
+
+	&.mb {
+		margin-bottom: 15px;
+	}
+}
+
+.title-descr {
+	font-size: 24px;
+	font-weight: 600;	
+
+	&.mt {
+		margin-top: 30px;
 	}
 }
 
@@ -76,11 +107,37 @@ $icon-font-path: '../fonts/';
 	&.white {
 		color: #fff;
 	}
+
+	&.blue {
+		color: $blue;
+	}
+
+	&.mt {
+		margin-top: 10px;
+	}
+
+	&.mb {
+		margin-bottom: 10px;
+	}
 }
 
 .title-md {
 	font-size: 36px;
 	font-weight: 800;
+
+	&.mt {
+		margin-top: 25px;
+	}
+
+	&.mb {
+		margin-bottom: 25px;
+	}
+
+	&.white {
+		color: #fff;
+	}
+	
+
 }
 
 .title-description {
@@ -103,6 +160,27 @@ $icon-font-path: '../fonts/';
 	}
 }
 
+.text-24 {
+	font-size: 24px;
+
+	&.mt {
+		margin-top: 15px;
+	}
+
+	&.mb {
+		margin-bottom: 15px;
+	}
+
+	&.blue {
+		color: $blue;
+	}
+}
+
+.text-18 {
+	font-size: 18px;
+	line-height: 1.5em;
+}
+
 .text-16 {
 	font-size: 16px;
 	line-height: 1.5em;
@@ -122,6 +200,11 @@ $icon-font-path: '../fonts/';
 	&.mb {
 		margin-bottom: 15px;
 	}
+}
+
+.text-14 {
+	font-size: 14px;
+	line-height: 1.5em;
 }
 
 .link-block {
@@ -146,11 +229,16 @@ $icon-font-path: '../fonts/';
 	font-weight: 800;
 	color: $blue;
 	text-decoration: underline;
+	cursor: pointer;
+	display: inline-block;
 
-	&:hover {
+	&:hover,
+	&:focus,
+	&:active {
 		color: $blue;
 		text-decoration: none;	
 	}
+	
 }
 
 @media only screen and (max-width: 1120px) {	
@@ -165,11 +253,27 @@ $icon-font-path: '../fonts/';
     
 	.title {
 		font-size: 40px;
+
+		&.md {
+			font-size: 30px;
+		}
+
+		&.sm {
+			font-size: 24px;	
+		}
 	} 
+
+	.title-descr {
+		font-size: 18px;
+	}
 
 	.title-md {
 		font-size: 30px;		
-	}	
+	}
+	
+	.text-24 {
+		font-size: 20px;
+	}
  
  }
 
@@ -180,7 +284,21 @@ $icon-font-path: '../fonts/';
 
 		&.md {
 			font-size: 24px;
-		}		
+		}
+		
+		&.sm {
+			font-size: 20px;
+
+			span {
+				font-size: 18px;
+				font-weight: 700;
+			}
+		}
+	}
+
+	.title-descr {
+		font-size: 14px;
+		line-height: 1.7em;
 	}
 	
 	.title-description {
@@ -201,6 +319,20 @@ $icon-font-path: '../fonts/';
 
 	.text-16 {
         font-size: 14px;
-    }
+		}
+		
+		.content-link {
+
+			&.mob-min {
+				font-size: 16px;
+			}
+		}
+
+	.text-24 {
+		font-size: 16px;
+	}
  
+	.text-18 {
+		font-size: 14px;
+	}
  }

@@ -1,0 +1,212 @@
+	{% extends "template.html" %}	
+	{% import "macros.html" as myMacros %}
+
+	{% block content %}
+	<main class="main servises-page">
+		<section class="servises-title-section width-block img-bg">			
+			<div class="title-img-wrap">
+				<img src="images/img-22.jpg" alt="">
+			</div>			
+			<div class="container">
+				<div class="colwrap">
+						<div class="col-30">
+							<h1 class="title ttu ">
+									Химчистка ковров в Киеве					
+							</h1>
+							<p class="title-md mt">от 350 грн</p>
+							<button class="button yellow button--rayen md mt mb" data-toggle="modal" data-target="#myModal">
+								<span>Заказать услугу</span>
+							</button>							
+						</div>
+						<div class="col-50">
+								<p class="title-descr it mt-72">Занимайтесь тем, что вас радует, а чистоту в доме доверьте профессионалам</p>						
+						</div>						
+				</div>				
+			</div>	
+		</section>
+		{% include "decore-section.html" %}
+		
+		<section class="content-section mb">
+			<div class="container">
+				<h1 class="title md">Наши услуги</h1>
+				<ul class="content__list mar">
+					{{ myMacros.contentList(className="red", imgPath="images/img-1.jpg", title="Уборка квартир") }}
+					{{ myMacros.contentList(className="green", imgPath="images/img-2.jpg", title="Уборка офисов") }}
+					{{ myMacros.contentList(className="blue", imgPath="images/img-3.jpg", title="Уборка коттеджей") }}
+					{{ myMacros.contentList(className="blue", imgPath="images/img-4.jpg", title="Эко уборка") }}
+					{{ myMacros.contentList(className="red", imgPath="images/img-5.jpg", title="Мойка окон") }}
+					{{ myMacros.contentList(className="green", imgPath="images/img-6.jpg", title="Мойка витрин") }}
+				</ul>
+				<div class="link-block mt desct-none">
+					<a href="" class="content-link">Смотреть все услуги</a>
+				</div>
+			</div>
+		</section>
+		<section class="content-section mb width-block">
+			<div class="color-section">
+				<div class="container">
+					<div class="row-wrap">
+						<div class="col-50">
+							<p class="subtitle ttu mb">РАБОТАЕМ БЕЗ ПРЕДОПЛАТЫ</p>
+							<p class="text-18 bold">Ковры натуральные, шегги, шелковые, на клеевой основе, после потопа.</p>
+						</div>
+					</div>
+					<div class="col-50 img-wrap mob-none">
+						<img src="images/img-24.jpg" alt="">
+					</div>
+				</div>
+			</div>
+			<div class="container desct-none">
+				<div class="col-50 img-wrap mob-content-img">
+					<img src="images/img-24.jpg" alt="">
+				</div>
+			</div>
+			<div class="container mt-30">
+				<div class="row-wrap color-section-content">
+					<div class="col-50 article">
+						<p>Коллектив компании  - это высококвалифицированные специалисты, прошедшие профессиональную подготовку и имеющие немалый опыт работы за плечами. Цех нашей химчистки оборудован современным европейским оборудованием проверенных производителей.</p>
+						<p>Перед тем, как отправить ковер на чистку, наши технологи подбирают наиболее подходящие моющие средства и методику обработки для каждого изделия индивидуально. </p>
+					</div>
+				</div>
+			</div>			
+		</section>
+		<section class="content-section">
+			<div class="container">
+				<div class="col-50">
+					<h2 class="title md">Как происходит процесс чистки</h2>
+				</div>
+				<div class="col-100 mt-30">
+					<div class="img-wrap">
+						<img src="images/infograph-1.jpg" alt="" class="infograph-1">
+						<img src="images/infograph-2.jpg" alt="" class="infograph-2">
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="content-section mb">
+			<div class="title-img-wrap title-img-wrap_1">
+				<img src="images/img-25.jpg" alt="">
+			</div>
+			<div class="container">
+				<div class="col-50">
+					<h2 class="title md">Что входит в чистку ковра</h2>
+				</div>
+				<ul class="prosess__list">
+					<li class="prosess__item w-1">
+						<span>Уничтожение аллергенов</span>
+						<i class="icon icon-plus"></i>
+					</li>
+					<li class="prosess__item w-2">
+						<span>даление запахов</span>
+						<i class="icon icon-plus"></i>
+					</li>
+					<li class="prosess__item w-3">
+						<span>Уничтожение клещей</span>
+						<i class="icon icon-plus"></i>
+					</li>
+					<li class="prosess__item w-4">
+						<span>Уничтожение аллергенов</span>
+						<i class="icon icon-plus"></i>
+					</li>
+					<li class="prosess__item w-5">
+						<span>Удаление запахов</span>
+						<i class="icon icon-plus"></i>
+					</li>
+					<li class="prosess__item w-6">
+						<span>Уничтожение клещей</span>
+						<i class="icon icon-plus"></i>
+					</li>
+					<li class="prosess__item w-7">
+						<span>Удаление запахов</span>
+						<i class="icon icon-plus"></i>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<section class="content-section ">
+			<div class="container">
+				<div class="col-50">
+					<h2 class="title md">Цены на клининговые услуги</h2>				
+				</div>
+				<div class="price-table-wrap">
+						<p class="price-table-text desct-none">Листайте вправо и смотрите остальные пункты таблицы</p>
+					<table class="price-table">
+						<thead>
+							<tr>
+								<th class="name-1">Химчистка ковров (у заказчика)</th>
+								<th>Ед. изм.</th>
+								<th>Цена (грн)</th>							
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Синтетические (тонкие)</td>
+								<td>м2</td>
+								<td>20.00</td>
+							</tr>
+							<tr>
+								<td>Шерстяные, полушерстяные</td>
+								<td>м2</td>
+								<td>120.00</td>
+							</tr>
+							<tr>
+								<td>Шелковые, ручной работы, элитные, высокий ворс</td>
+								<td>м2</td>
+								<td>1520.00</td>
+							</tr>
+							<tr>
+								<td>От 30 до 50 м2</td>
+								<td>м2</td>
+								<td>1520.00</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</section>
+
+		{% include "advant-block.html" %}	
+
+		<section class="content-section mb">
+			<div class="container">
+				<div class="col-50">
+					<h2 class="title md">Отзывы</h2>				
+				</div>
+				<div class="feedback-slider">					
+					{{ myMacros.feedbackList(imgPath="images/photo-1.jpg", name="Чистка ковров", title="Наталья", text="Добрый день! Хочу выразить благодарность за качественно выполненную генеральную уборку квартиры. Хотел бы отметить лояльность цен на услуги." ) }}
+					{{ myMacros.feedbackList(imgPath="images/photo-2.jpg", name="Уборка после ремонта", title="Екатерина", text="Я пользуюсь услугами вашей клининговой компании на протяжении 2-х лет. Хочу сказать спасибо за качественное выполнение уборки моего дома. " ) }}
+					{{ myMacros.feedbackList(imgPath="images/photo-2.jpg", name="Уборка после ремонта", title="Марина", text="Я пользуюсь услугами вашей клининговой компании на протяжении 2-х лет. Хочу сказать спасибо за качественное выполнение уборки моего дома. " ) }}
+				</div>
+				<div class="feedback-slider-button mob-none">
+					<button class="slider-btn prev-button">
+						<i class="fa fa-long-arrow-left"></i>
+						Предыдущий
+					</button>
+					<button class="slider-btn next-button">
+						Следующий
+						<i class="fa fa-long-arrow-right"></i>
+					</button>
+				</div>
+			</div>
+		</section>
+
+		<section class="content-section mb">
+			<div class="container">
+				<div class="col-50">
+					<h2 class="title md">Оборудование</h2>	
+				</div>
+				{% include "plant-list.html" %}
+				<div class="link-block mt desct-none">
+					<a href="" class="content-link">Смотреть все</a>
+				</div>			
+			</div>
+		</section>
+			
+		
+		{% include "order-section.html" %}
+
+		{{ myMacros.mainTextSection(className="bg-white article") }}		
+		
+		{% include "footer.html" %}	
+	</main>
+	 {% endblock %} 

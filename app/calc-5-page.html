@@ -1,0 +1,27 @@
+	{% extends "template.html" %}	
+	{% import "macros.html" as myMacros %}
+
+	{% block content %}
+	<main class="main calc-page">
+			{{ myMacros.headCalc(text="4") }}
+
+		<section class="main-content-section">
+			<div class="container">
+				<div class="top-block">
+				   <div class="colwrap shadow white">
+					   <div class="left-col min">							
+                            <div class="thank-block">
+                                <div class="thank-block__wrap">
+                                    <p class="thank-block__title">Спасибо за заявку!</p>
+                                    <p class="thank-block__text">В ближайшее время с Вами свяжутся наши менеджеры для уточнение информации.</p>
+                                </div>                               
+                            </div>												
+					   </div> 					  
+				   </div>
+				</div>
+			</div>
+		</section>
+		
+		{% include "footer.html" %}	
+	</main>
+	 {% endblock %} 

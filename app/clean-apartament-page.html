@@ -1,0 +1,231 @@
+	{% extends "template.html" %}	
+	{% import "macros.html" as myMacros %}
+
+	{% block content %}
+	<main class="main servises-page">
+		<section class="servises-title-section width-block">			
+			<div class="title-img-wrap">
+				<img src="images/img-17.jpg" alt="">
+			</div>			
+			<div class="container">
+				<div class="title-block">
+						<div class="col-40">
+							<h1 class="title md">
+									Уборка квартиры - не Ваше дело						
+							</h1>
+							<p class="title-descr it mt">Занимайтесь тем, что вас радует, а чистоту в доме доверьте профессионалам</p>						
+						</div>						
+				</div>				
+			</div>	
+		</section>
+		<section class="content-section mb calc-section">
+			<div class="container">
+				<div class="top-block min">
+					<div class="calc__block">
+							{{ myMacros.filterList(text="Рассчитать стоимость") }}	
+					<div>		
+				</div>
+			</div>
+		</section>
+		
+		<section class="content-section">
+			<div class="container">
+				<div class="servises-price__block">
+					<ul class="servises-price__list">
+						<li class="servises-price__item">
+							<div class="price-icon-block">
+								<img src="images/price-icon-1.png" alt="">
+							</div>
+							<p class="servises-price__text">от 1280 грн.</p>
+							<p class="servises-price__descr">Однокомнатная квартира</p>
+						</li>
+						<li class="servises-price__item">
+							<div class="price-icon-block">
+								<img src="images/price-icon-2.png" alt="">
+							</div>
+							<p class="servises-price__text">от 2950 грн.</p>
+							<p class="servises-price__descr">Двухкомнатная квартира</p>
+						</li>
+						<li class="servises-price__item">
+							<div class="price-icon-block">
+								<img src="images/price-icon-3.png" alt="">
+							</div>
+							<p class="servises-price__text">от 2950 грн.</p>
+							<p class="servises-price__descr">Трехкомнатная квартира</p>
+						</li>
+						<li class="servises-price__item">
+							<div class="price-icon-block">
+								<img src="images/price-icon-4.png" alt="">
+							</div>
+							<p class="servises-price__text">от 2950 грн.</p>
+							<p class="servises-price__descr">Четырехкомнатная квартира</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<section class="content-section clean-section">
+			<div class="container">
+				<div class="colwrap">
+					<div class="col-40 pr">
+						<h2 class="title-md mb">Как мы делаем уборку</h2>
+					</div>
+					<div class="col-60">
+						<p class="text-18 it">Клинер приезжает со всем необходимым и сразу же приступает 
+								к уборке квартиры. Вам остается только оценить результат.</p>
+					</div>
+				</div>
+			</div>
+			<div class="pagewrap">
+				<div class="title-img-wrap">
+					<img src="images/img-18.jpg" alt="">
+				</div>
+				<div class="container">
+					<div class="colwrap">
+						<div class="col-40 pr">
+							<div class="clean-list mb" id="accordion">
+								<div class="panel panel-default">
+									<div class="clean-list-heading">
+										<h4 class="panel-title">
+											<a data-toggle="collapse" data-parent="#accordion" href="#collOne">
+												<i class="icon icon-clean-1"></i>
+												Комнаты
+											</a>
+										</h4>
+									</div>
+									<div id="collOne" class="panel-collapse collapse in">
+										<div class="panel-body">
+											<ul class="clean__list">
+												<li class="clean__item">
+													Чистим стеклянные поверхности и зеркала
+												</li>
+												<li class="clean__item">
+													Расставляем обувь
+												</li>
+												<li class="clean__item">
+													Протираем все доступные поверхности
+												</li>
+												<li class="clean__item">
+													Моем пол и протираем плинтусы
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="panel panel-default">
+									<div class="clean-list-heading">
+										<h4 class="panel-title">
+											<a data-toggle="collapse" data-parent="#accordion" href="#collTwo">
+												<i class="icon icon-clean-2"></i>
+												Коридор
+											</a>
+										</h4>
+									</div>
+									<div id="collTwo" class="panel-collapse collapse">
+										<div class="panel-body">
+											<ul class="clean__list">
+												<li class="clean__item">
+													Чистим стеклянные поверхности и зеркала
+												</li>
+												<li class="clean__item">
+													Расставляем обувь
+												</li>
+												<li class="clean__item">
+													Протираем все доступные поверхности
+												</li>
+												<li class="clean__item">
+													Моем пол и протираем плинтусы
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="panel panel-default">
+									<div class="clean-list-heading">
+										<h4 class="panel-title">
+											<a data-toggle="collapse" data-parent="#accordion" href="#collThree">
+												<i class="icon icon-clean-3"></i>
+												Кухня
+											</a>
+										</h4>
+									</div>
+									<div id="collThree" class="panel-collapse collapse">
+										<div class="panel-body">
+											<ul class="clean__list">
+												<li class="clean__item">
+													Чистим стеклянные поверхности и зеркала
+												</li>
+												<li class="clean__item">
+													Расставляем обувь
+												</li>
+												<li class="clean__item">
+													Протираем все доступные поверхности
+												</li>
+												<li class="clean__item">
+													Моем пол и протираем плинтусы
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="panel panel-default">
+									<div class="clean-list-heading">
+										<h4 class="panel-title">
+											<a data-toggle="collapse" data-parent="#accordion" href="#collFour">
+												<i class="icon icon-clean-4"></i>
+												Ванная
+											</a>
+										</h4>
+									</div>
+									<div id="collFour" class="panel-collapse collapse">
+										<div class="panel-body">
+											<ul class="clean__list">
+												<li class="clean__item">
+													Чистим стеклянные поверхности и зеркала
+												</li>
+												<li class="clean__item">
+													Расставляем обувь
+												</li>
+												<li class="clean__item">
+													Протираем все доступные поверхности
+												</li>
+												<li class="clean__item">
+													Моем пол и протираем плинтусы
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="link-block mt left">
+								<a class="content-link js-add-clean">Что входит в уборку</a>
+							</div>
+						</div>
+						{% include "clean-popup.html" %}		
+					</div>
+				</div>
+			</div>			
+		</section>
+
+		{% include "advant-block.html" %}
+		
+		<section class="content-section">
+			<div class="container">
+				<div class="col-40">
+					<h2 class="title-md mb">Часто задаваемые вопросы</h2>
+				</div>	
+				{% include "faq-block.html" %}
+				<div class="link-block mt left mob-none">
+					<a href="" class="content-link">Читать все вопросы</a>
+				</div>
+			</div>			
+		</section>
+
+		{% include "order-section.html" %}
+
+		{{ myMacros.mainTextSection(className="bg-white article") }}		
+		
+		{% include "footer.html" %}	
+	</main>
+	 {% endblock %} 

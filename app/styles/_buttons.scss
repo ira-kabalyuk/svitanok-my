@@ -78,6 +78,15 @@ $icon-font-path: '../fonts/';
     &.mb {
         margin-bottom: 20px;
     }
+
+    &.calc-button {
+        padding: 10px 0;
+        min-height: 40px;
+
+        &:hover {
+            border: 1px solid #cbe7f7;
+        }
+    }
 }
 
 .arrow {

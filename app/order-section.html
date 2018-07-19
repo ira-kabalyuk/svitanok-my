@@ -1,0 +1,15 @@
+{% import "macros.html" as myMacros %}
+
+<section class="order-section mt light-blue">
+        <div class="container bg-section">
+            <div class="colwrap ">
+                <div class="col-40">
+                    <h2 class="title mb">Закажите уборку квартиры сейчас!</h2>
+                </div>
+                <div class="col-35">						
+                        <p class="text-16 it sbd">Чтобы скорее закончить с вашим ремонтом! </p>						
+                    {{ myMacros.filterList(className="vertical blue", text="Заказать услугу", classNameBtn="arrow", classNameItem="min", classNameTelItem="md") }}				
+                </div>
+            </div>
+        </div>
+    </section>

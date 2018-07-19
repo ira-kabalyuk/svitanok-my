@@ -1,0 +1,154 @@
+$icon-font-path: '../fonts/';
+
+@import "_includs";
+
+.about-title-section {
+    padding: 50px 0;
+    position: relative;
+
+    .img-wrap {
+        position: absolute;
+        top: -50px;
+        right: 0;
+        max-width: 880px;      
+        height: auto;
+      
+    }    
+}
+
+
+
+.content-section {
+    position: relative; 
+    margin: 50px 0;
+    
+
+    &.mt {
+        margin: 50px 0 0 0;
+    }
+
+    &.mb {
+        margin: 0 0 50px 0;
+    }
+
+    .not-mar {
+        margin: 0;
+    }
+
+    &.light-blue {
+        background: $light-blue;
+        padding: 50px 0;
+    }
+}
+
+.color-title-wrap {
+    padding-top: 50px;
+}
+
+.color-title {
+
+    &__block {
+        color: $blue;
+        margin-bottom: 15px;
+    }
+
+    &__title {
+        font-size: 60px;
+        font-weight: 800;
+        line-height: 48px;
+    }
+
+    &__subtitle {
+        font-size: 16px;
+        font-weight: 800;
+    }
+}
+
+.color-block {
+    padding: 55px;
+    background: $light-blue;
+    position: relative;
+
+    &:after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background: $light-blue;
+        top: 0;
+        right: -100%;
+    }
+
+    p {
+        font-size: 24px;
+        font-weight: 700;
+        position: relative;
+        padding-left: 20px;
+
+        span {
+            font-weight: 800;
+        }
+
+        &:before {
+            content: "";
+            width: 6px;
+            height: 100%;
+            background: $black;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+}
+
+.text-title-section {
+    position: relative;
+    height: 445px;
+    
+    .img-wrap {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+
+        &:after {
+            content: "";
+            background: rgba(38, 84, 100, 0.5);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.text-title-wrap {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+
+    .title-md {
+        text-align: center;
+        max-width: 600px;
+        margin-top: 15px;
+    }
+}
+
+.text-block-img-wrap {
+    height: 455px;
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+
+    .about-title-section {
+
+        .img-wrap {
+           width: 880px;           
+        }
+    }
+}

@@ -11,7 +11,7 @@ $icon-font-path: '../fonts/';
 	height: 100%;
 	overflow-x: hidden;
 	overflow-y: auto;
-	z-index: 999;
+	z-index: 999;	
 
 	.info-block {
 		margin: 30px 0;
@@ -285,7 +285,7 @@ $icon-font-path: '../fonts/';
 
 	   .input-wrap {
 		   width: 100%;
-		   margin-bottom: 10px;
+		   margin: 0 0 10px 0;
 
 			input,
 			textarea {

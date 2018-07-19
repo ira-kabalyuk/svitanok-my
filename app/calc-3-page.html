@@ -1,0 +1,82 @@
+	{% extends "template.html" %}	
+	{% import "macros.html" as myMacros %}
+
+	{% block content %}
+	<main class="main calc-page">
+			{{ myMacros.headCalc(text="3") }}
+
+		<section class="main-content-section">
+			<div class="container">
+				<div class="top-block">
+				   <div class="colwrap shadow white">
+					   <div class="left-col">
+							<div class="block mb">
+								<h2 class="content-title">Выберите дату</h2>
+								<div class="content-form-wrap">
+									<form action="" class="content-form">
+										<div class="input-wrap short_w">
+												<input type="text" class="content-input js-datepicker" placeholder="День">										
+										</div>
+										<div class="input-wrap short_w">
+												<select>
+													<option data-display="Месяц">Январь</option>
+													<option value="1">Февраль</option>
+													<option value="2">Март</option>
+													<option value="3" disabled>Апрель</option>
+													<option value="5">Май</option>
+													<option value="6">Июнь</option>
+													<option value="7">Июль</option>
+													<option value="8">Август</option>
+													<option value="9">Сентябрь</option>
+													<option value="10">Октябрь</option>
+													<option value="11">Ноябрь</option>
+													<option value="12">Декабрь</option>
+												</select>										
+										</div>
+										<div class="input-wrap short">
+											<input type="text" class="content-input" placeholder="Год">
+										</div>										
+									</form>
+								</div>
+							</div>
+							<div class="block mb">
+									<h2 class="content-title">Выберите время</h2>
+									<div class="content-form-wrap">
+										<form action="" class="content-form">
+											
+											<div class="input-wrap min_w">
+													<select>
+														<option data-display="C/до">с 8.00 до 9.00</option>
+														<option value="1">с 9.00 до 10.00</option>
+														<option value="2">с 10.00 до 11.00</option>
+														<option value="3" disabled>с 11.00 до 12.00</option>
+														<option value="5">с 12.00 до 13.00</option>
+														<option value="6">с 13.00 до 14.00</option>
+														<option value="7">с 15.00 до 16.00</option>
+														<option value="8">с 17.00 до 17.00</option>													
+													</select>										
+											</div>
+											<div class="colwrap sb aic">
+													<button class="button yellow button--rayen md mt mb">
+															<span>Далее</span>
+													</button>
+													<a href="" class="content-link mob-min">Вернуться назад</a>
+											</div>										
+										</form>
+									</div>
+								</div>
+
+								<div class="block">
+									<h2 class="content-title mb">Ответы на наиболее важные вопросы</h2>
+									{% include "faq-block.html" %}
+								</div>	
+					   </div> 
+					   {% include "right-column.html" %}	 
+				   </div>
+				</div>
+			</div>
+		</section>
+		
+		{% include "footer.html" %}	
+	</main>
+	 {% endblock %} 

@@ -4,7 +4,12 @@ $icon-font-path: '../fonts/';
 
 .left-col {
     padding: 35px;
-    width: 66.6%;
+    width: calc(100% - 285px - 10px);
+    flex-grow: 1;
+
+    &.min {
+        padding: 5px;
+    }
 }
 
 .right-col {
@@ -175,8 +180,7 @@ $icon-font-path: '../fonts/';
     &__item {
         width: 33.3%;
         display: flex;       
-        border: 1px solid $border-color;
-        overflow: hidden;
+        border: 1px solid $border-color;        
         height: 125px;
         transition: all .4s ease 0s;
         margin-right: -1px;
@@ -185,7 +189,20 @@ $icon-font-path: '../fonts/';
         .link {
             color: $blue;
             font-size: 14px;
-            font-weight: 600;           
+            font-weight: 600;
+            position: relative;
+            
+            &:hover {
+               
+                .servises__item-popup {
+                    opacity: 1;
+                    z-index: 10;
+
+                    p {
+                        color: $black;
+                    }
+                }
+            }
         }
 
         &:hover {
@@ -199,6 +216,207 @@ $icon-font-path: '../fonts/';
                 color: #fff;
             }
         }
+
+        &.item-1 {
+
+            .servises-icon {
+                background: url(../images/s-icon-1.svg) no-repeat;
+                background-size: cover;
+            }
+
+            &:hover {
+
+                .servises-icon {
+                    background: url(../images/s-icon-1-hover.svg);
+                    background-size: cover;
+                   
+                } 
+            }
+        }
+
+        &.item-2 {
+
+            .servises-icon {
+                background: url(../images/s-icon-2.svg) no-repeat;
+                background-size: cover;
+            }
+
+            &:hover {
+
+                .servises-icon {
+                    background: url(../images/s-icon-2-hover.svg);
+                    background-size: cover;
+                   
+                } 
+            }
+        }
+
+        &.item-3 {
+
+            .servises-icon {
+                background: url(../images/s-icon-3.svg) no-repeat;
+                background-size: cover;
+            }
+
+            &:hover {
+
+                .servises-icon {
+                    background: url(../images/s-icon-3-hover.svg);
+                    background-size: cover;
+                   
+                } 
+            }
+        }
+
+        &.item-4 {
+
+            .servises-icon {
+                background: url(../images/s-icon-4.svg) no-repeat;
+                background-size: cover;
+            }
+
+            &:hover {
+
+                .servises-icon {
+                    background: url(../images/s-icon-4-hover.svg);
+                    background-size: cover;
+                   
+                } 
+            }
+        }
+
+        &.item-5 {
+
+            .servises-icon {
+                background: url(../images/s-icon-5.svg) no-repeat;
+                background-size: cover;
+            }
+
+            &:hover {
+
+                .servises-icon {
+                    background: url(../images/s-icon-5-hover.svg);
+                    background-size: cover;
+                   
+                } 
+            }
+        }
+
+        &.item-6 {
+
+            .servises-icon {
+                background: url(../images/s-icon-6.svg) no-repeat;
+                background-size: cover;
+            }
+
+            &:hover {
+
+                .servises-icon {
+                    background: url(../images/s-icon-6-hover.svg);
+                    background-size: cover;
+                   
+                } 
+            }
+        }
+
+        &.item-7 {
+
+            .servises-icon {
+                background: url(../images/s-icon-7.svg) no-repeat;
+                background-size: cover;
+            }
+
+            &:hover {
+
+                .servises-icon {
+                    background: url(../images/s-icon-7-hover.svg);
+                    background-size: cover;
+                   
+                } 
+            }
+        }
+
+        &.item-8 {
+
+            .servises-icon {
+                background: url(../images/s-icon-8.svg) no-repeat;
+                background-size: cover;
+            }
+
+            &:hover {
+
+                .servises-icon {
+                    background: url(../images/s-icon-8-hover.svg);
+                    background-size: cover;
+                   
+                } 
+            }
+        }
+
+        &.item-9 {
+
+            .servises-icon {
+                background: url(../images/s-icon-9.svg) no-repeat;
+                background-size: cover;
+            }
+
+            &:hover {
+
+                .servises-icon {
+                    background: url(../images/s-icon-9-hover.svg);
+                    background-size: cover;
+                   
+                } 
+            }
+        }
+
+        &.item-10 {
+
+            .servises-icon {
+                background: url(../images/s-icon-10.svg) no-repeat;
+                background-size: cover;
+            }
+
+            &:hover {
+
+                .servises-icon {
+                    background: url(../images/s-icon-10-hover.svg);
+                    background-size: cover;
+                   
+                } 
+            }
+        }
+
+        &.item-11 {
+
+            .servises-icon {
+                background: url(../images/s-icon-11.svg) no-repeat;
+                background-size: cover;
+            }
+
+            &:hover {
+
+                .servises-icon {
+                    background: url(../images/s-icon-11-hover.svg);
+                    background-size: cover;
+                   
+                } 
+            }
+        }
+    }
+
+    &__item-popup {
+        padding: 15px;
+        border-radius: 5px;
+        background: #fff;
+        position: absolute;
+        box-shadow: 0px 1px 10px 2px #c4eaf8;
+        width: 195px;       
+        z-index: -15;
+        top: calc(100% + 20px);
+        left: 0;
+        opacity: 0;
+        transition: all .4s ease 0s;
     }
 
     &__item-wrap {
@@ -207,7 +425,12 @@ $icon-font-path: '../fonts/';
         height: 100%;
         align-items: center;
         padding: 20px;
+        position: relative;
     }
+}
+
+.servises-item-popup-text {
+    font-size: 12px;
 }
 
 .servises-item-title {
@@ -304,43 +527,70 @@ $icon-font-path: '../fonts/';
     margin: 30px 0;
 }
 
-.promo-form {
-    display: flex;
-   position: relative;
+
+
+//calc
+
+
+
+.paycard {
+
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 15px -10px;
+	}
+
+	&__item {
+		width: calc(16.66% - 20px);
+		margin: 0 10px;	
+		display: flex;
+		align-items: center;
+	}
 }
 
-.promo-input {
-    width: 50%;
-    border: none;
-    background: #fff;
-    padding: 10px 15px;
-    font-size: 14px;
-    font-style: italic;
-    color: $black;
-    border-radius: 5px 0 0 5px;
-    width: 100%;
+.thank-block {
+    background: $blue;
+    min-height: 535px;
+    padding: 100px 70px;
+    display: flex; 
+    color: #fff;
+    position: relative;
+
+    &:after {
+        content: "";
+        background: url(../images/thank.png) no-repeat;
+        background-position: 100% 50%; 
+        background-size: contain;
+        width: 315px;
+        height: 387px;
+        display: block;
+        position: relative;
+       /* top: 25px;
+        right: 70px;*/
+        top: -50px;
+        right: 0;
+        z-index: 10;
+    }
     
-    &::-webkit-input-placeholder {font-style: italic; color: $dark-gray};
-	&::-moz-placeholder          {font-style: italic; color: $dark-gray};
-	&:-moz-placeholder           {font-style: italic; color: $dark-gray};
-	&:-ms-input-placeholder      {font-style: italic; color: $dark-gray};
-}
+    &__wrap {
+        width: 445px;
+        max-width: 445px;
+        margin-right: 20px;
+    }
 
-.promo-button {
-    width: 110px;
-    background: $yellow;
-    color: $black;
-    border: none;
-    padding: 10px 15px;
-    font-size: 14px;
-    border-radius: 5px;
-    margin-right: -5px;   
-    position: absolute;
-    top: 0;
-    right: 0;    
 
-    &:hover {
-        background: $clear-blue;
+    &__title {
+        font-size: 48px;
+        font-weight: 800;
+        margin-bottom: 20px;
+    }
+
+    &__text {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 1.5em;
     }
 }
+
 

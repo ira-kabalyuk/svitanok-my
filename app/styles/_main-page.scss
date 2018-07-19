@@ -23,6 +23,12 @@ $icon-font-path: '../fonts/';
             margin: 0 68px;           
         }
 
+        .col-40 {
+            width: calc(40% - 134px);
+            margin: 0 68px;           
+        }
+
+
         .col-66 {
             width: calc(66.6% - 134px);
             margin: 0 68px;           
@@ -43,7 +49,11 @@ $icon-font-path: '../fonts/';
                 font-size: 42px;
             }
         }
-    }    
+    }  
+    
+    .col-40 {
+        padding: 0 35px;
+    }
 	
 }
 
@@ -56,12 +66,16 @@ $icon-font-path: '../fonts/';
     
 }
 
-.content {
+.content {    
 
     &__list {
         display: flex;
         flex-wrap: wrap;
-        margin: -50px -15px 0;        
+        margin: -50px -15px 0;
+        
+        &.mar {
+            margin: 50px -15px 0;
+        }
     }
 
     &__item {
@@ -137,9 +151,6 @@ $icon-font-path: '../fonts/';
 }
 
 .main-text-section {
-    padding: 57px 0;
-
-    .row-wrap {
-        margin-top: 25px;
-    }
+    padding: 57px 0;   
+    
 }

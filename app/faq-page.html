@@ -1,0 +1,114 @@
+	{% extends "template.html" %}	
+	{% import "macros.html" as myMacros %}
+
+	{% block content %}
+	<main class="main faq-page">		
+		<section class="faq-section">
+			<div class="container">
+				<div class="colwrap">
+					<div class="col-40">
+						<h2 class="title-md deco-line min">Вопросы и ответы</h2>
+					</div>
+				</div>
+				<div class="colwrap"> 
+					<div class="col-40 mob-none">
+						<ul class="faq-tabs">
+							<li class="faq-tabs-item active">
+								<div class="faq-tabs-item-wrap">
+									<a href="#faq1" data-toggle="tab">Оплата</a>
+									<i class="fa fa-long-arrow-right"></i>
+								</div>
+								<p class="faq-tabs-text">
+									Как оплачивать уборки Basic — какие есть варианты и особенности.
+								</p>
+							</li>
+							<li class="faq-tabs-item">
+								<div class="faq-tabs-item-wrap">
+									<a href="#faq2" data-toggle="tab">Изменение уборок</a>
+									<i class="fa fa-long-arrow-right"></i>
+								</div>
+								<p class="faq-tabs-text">
+									Как можно отменить уборку, перенести её на другой день или на другое время.
+								</p>
+							</li>
+							<li class="faq-tabs-item">
+								<div class="faq-tabs-item-wrap">
+									<a href="#faq3" data-toggle="tab">Уборка</a>
+									<i class="fa fa-long-arrow-right"></i>
+								</div>
+								<p class="faq-tabs-text">
+									Из чего состоит уборка Basic, всё о средствах и инвентаре в уборках Basic.
+								</p>
+							</li>
+							<li class="faq-tabs-item">								
+								<div class="faq-tabs-item-wrap">
+									<a href="#faq4" data-toggle="tab">Бонусы и скидки</a>
+									<i class="fa fa-long-arrow-right"></i>
+								</div>
+								<p class="faq-tabs-text">
+									Всевозможные бонусы  и скидки, которые только могут быть.
+								</p>
+							</li>
+						</ul>									  
+					</div>   
+					<div class="col-60 pl">
+						<div class="faq-tab-content" id="myTabContent">
+							<div class="desct-none mobile faq-tabs-item active">
+								<div class="faq-tabs-item-wrap">
+									<a href="#faq1" data-toggle="tab">Оплата</a>
+									<i class="fa fa-long-arrow-down"></i>
+								</div>
+								<p class="faq-tabs-text">
+									Как оплачивать уборки Basic — какие есть варианты и особенности.
+								</p>
+							</div>
+							<div class="tab-pane active" id="faq1">
+								{% include "faq-block.html" %}
+							</div>
+
+
+							<div class="desct-none mobile faq-tabs-item">
+								<div class="faq-tabs-item-wrap">
+									<a href="#faq2" data-toggle="tab">Изменение уборок</a>
+									<i class="fa fa-long-arrow-down"></i>
+								</div>
+								<p class="faq-tabs-text">
+									Как оплачивать уборки Basic — какие есть варианты и особенности.
+								</p>
+							</div>
+							<div class="tab-pane " id="faq2">
+								{% include "faq-block-1.html" %}
+							</div>
+
+
+							<div class="desct-none mobile faq-tabs-item">
+								<div class="faq-tabs-item-wrap">
+									<a href="#faq3" data-toggle="tab">Уборка</a>
+									<i class="fa fa-long-arrow-down"></i>
+								</div>
+								<p class="faq-tabs-text">
+									Как оплачивать уборки Basic — какие есть варианты и особенности.
+								</p>
+							</div>
+							<div class="tab-pane" id="faq3">Всевозможные бонусы  и скидки, которые только могут быть.</div>
+							
+							
+							<div class="desct-none mobile faq-tabs-item">
+								<div class="faq-tabs-item-wrap">
+									<a href="#faq4" data-toggle="tab">Акции и бонусы</a>
+									<i class="fa fa-long-arrow-down"></i>
+								</div>
+								<p class="faq-tabs-text">
+									Как оплачивать уборки Basic — какие есть варианты и особенности.
+								</p>
+							</div>
+							<div class="tab-pane" id="faq4">Из чего состоит уборка Basic, всё о средствах и инвентаре в уборках Basic.</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</section>	
+		{% include "footer.html" %}	
+	</main>
+	 {% endblock %} 

@@ -6,7 +6,18 @@ $icon-font-path: '../fonts/';
     
 	.container {
         width: 100%;
-    }	
+    }
+    
+    .bg-section {
+
+        &:before {
+            right: -15px;
+        }
+
+        &:after {
+            display: none;
+        }
+    }
 
     .submenu {
         max-width: 100%;
@@ -26,6 +37,33 @@ $icon-font-path: '../fonts/';
             margin-bottom: 50px;
         }
         
+		}
+		
+	//calc-pages 
+			   
+	.servises {
+  
+		&__item {
+				width: 50%;  
+								
+		}
+}
+
+	.input-wrap {	
+
+		&.min {
+			width: calc(50% - 20px);
+		}
+		
+	}
+
+//end-calc-pages
+
+.calc {
+
+    &__item {
+        width: calc(50% - 18px);        
     }
+}
 
 }

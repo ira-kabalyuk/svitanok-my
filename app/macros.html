@@ -99,6 +99,30 @@ text="Убираем в домах и квартирах, бизнес-цент�
 </li>
 {% endmacro %}
 
+<!--Шапка страниц калькулятор-->
+{% macro headCalc(		
+	text=""	
+	) 
+	%}	
+<section class="page-title-section width-block">
+		<div class="container">
+			<div class="title-block__row">
+					<div class="col-66">
+						<h1 class="title md deco-line black">
+								Что входит в уборку							
+						</h1>						
+					</div>
+					<div class="col-33 flex aife">
+						<h2 class="subtitle"><span>{{text}}</span>/4 детали</h2>							
+					</div>
+			</div>				
+		</div>	
+	</section>
+	{% endmacro %}
+
+
+<!--плитка услугстраниц калькулятор-->
+
 {% macro servisesList(
 className="",		
 title=""	
@@ -109,11 +133,17 @@ title=""
 		<i class="servises-icon"></i>
 		<div class="servises__item-descr">
 			<p class="servises-item-title">{{title}}</p>
-			<a href="" class="link">Подробнее</a>
+			<a href="" class="link">Подробнее
+				<div class="servises__item-popup">
+					<p class="servises-item-popup-text">Отмоем холодильную и морозильную камеры. Отмоем холодильную и морозильную камеры. Отмоем холодильную и морозильную камеры.</p>
+				</div>
+			</a>
 		</div>
 	</div>
 </li>
 {% endmacro %}
+
+<!--цены правой колонки страниц калькулятор-->
 
 {% macro priceList(			
 	title="",			
@@ -147,5 +177,85 @@ title=""
 		{% endif %} 
 	</div>
 {% endmacro %}
+
+{% macro filterList(			
+	className="",	
+	text="",
+	classNameItem="",
+	classNameBtn="",
+	classNameTelItem=""
+	) 
+	%}
+
+	<ul class="calc__list {{className}}">
+	<li class="calc__item {{classNameItem}}">
+			<div class="calc-counter-block ">
+				<div class="calc-counter-btn left">
+					<i class="fa fa-minus"></i>
+				</div>
+				<div class="calc-value"> <span>1 комната</span> </div>
+				<div class="calc-counter-btn right">
+					<i class="fa fa-plus"></i>
+				</div> 
+			</div>
+		</li>
+		<li class="calc__item {{classNameItem}}">
+			<div class="calc-counter-block">
+				<div class="calc-counter-btn left">
+					<i class="fa fa-minus"></i>
+				</div>
+				<div class="calc-value"> <span>2 санузла</span> </div>
+				<div class="calc-counter-btn right">
+					<i class="fa fa-plus"></i>
+				</div> 
+			</div>
+		</li>
+		<li class="calc__item {{classNameTelItem}}">
+			<div class="calc-counter-block">
+				<div class="calc-counter-btn left">
+					<span>+3</span>
+				</div>
+				<input class="calc-value js-phone" placeholder="80XX-XX-XX">
+				
+			</div>
+		</li>
+		<li class="calc__item">
+			<button class="button yellow button--rayen calc-button">
+				<span class="{{classNameBtn}}">{{text}}</span>
+			</button>
+		</li>				
+	</ul>
+	
+{% endmacro %}
+
+{% macro feedbackList(		
+	imgPath="",
+	text="",
+	name="",
+	title=""
+	) 
+	%}
+
+	<div class="feedback-block">
+		<div class="img-wrap">
+			<img src="{{imgPath}}" alt="">
+		</div>				
+		<div class="feedback-block-wrap">
+			<div class="feedback-name-wrap">
+				<span class="feedback-name">{{name}}</span>
+				<span class="feedback-data">13.04.2018</span>
+			</div>
+			<div class="feedback-wrap">
+				<p class="feedback-title">{{title}}</p>
+				<p class="feedback-text">{{text}}</p>
+			</div>
+		</div>
+	</div>
+
+
+{% endmacro %}	
+
+
+
 
 

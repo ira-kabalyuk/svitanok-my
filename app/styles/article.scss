@@ -5,6 +5,117 @@ $icon-font-path: '../fonts/';
 .article {
 
     p {
-        
-    }
+		font-size: 16px;			
+		line-height: 1.7em;
+		margin-bottom: 15px;
+		margin-bottom: 10px;
+	}
+		
+		b {
+			font-weight: 700;			
+		}
+
+		.article-list {
+
+			li {
+				font-size: 14px;
+				font-weight: 600;
+				line-height: 1.5em;
+				margin: 10px 0;
+				position: relative;
+				padding-left: 25px;
+
+				&:before {
+					content: "";
+					width: 7px;
+					height: 7px;
+					background: $blue;
+					border-radius: 50%;
+					display: block;
+					position: absolute;
+					top: 7px;
+					left: 0;
+				}
+			}
+		}
+
+	a {
+		color: $blue;
+
+		&:hover,
+		&:focus,
+		&:active {
+			color: $blue;
+			text-decoration: underline;
+		}
+	}
+
+	&.min {
+		
+		p {
+			font-size: 14px;
+			line-height: 2em;
+		}
+
+		b {
+			font-weight: 600;
+		}
+	}
+
+	&.max {
+		
+		p {
+			font-size: 24px;
+			line-height: 1.5em;
+		}
+
+		b {
+			font-weight: 600;
+		}
+	}
+
+	.text-24 {
+		font-size: 24px;
+	
+		&.mt {
+			margin-top: 15px;
+		}
+	
+		&.mb {
+			margin-bottom: 15px;
+		}
+	}
+}
+
+
+
+@media only screen and (max-width: 767px) {
+
+	.article {
+
+		p {
+			font-size: 14px;
+		}
+
+		&.max {
+
+			p {
+				font-size: 16px;
+			}
+		}
+	}
+
+	.text-24 {
+		font-size: 20px;		
+	}
+}
+
+@media only screen and (max-width: 667px) {
+
+	.article {		
+
+		.text-24 {
+			font-size: 16px;		
+		}
+	}	
 }

@@ -1,0 +1,101 @@
+	{% extends "template.html" %}	
+	{% import "macros.html" as myMacros %}
+
+	{% block content %}
+	<main class="main text-page">
+		<section class="text-title-section width-block">
+			<div class="img-wrap">
+				<img src="images/img-15.jpg" alt="">
+			</div>
+			<div class="container h-100">
+				<div class="text-title-wrap">
+					<p class="blog-item-text white">
+						<i class="fa fa-calendar"></i>
+						11 июля 2018
+					</p>
+					<h1 class="title-md white">
+							Как защитить дом от посторонних, пока вы в отпуске?
+					</h1>			
+				</div>			
+			</div>	
+		</section>
+
+		<section class="content-section mt">
+			<div class="container">
+				<div class="article max">
+					<p>А все ли дома нормально? Эта мысль может отравить любое путешествие, придавая испанскому мохито и тайским кокосам какой-то тревожный привкус. Рассказываем, как сделать все возможное, чтобы свести риск к минимуму и не дать ворам обчистить вашу квартиру, пока вы загораете.</p>
+				</div>
+			</div>
+		</section>
+		
+		<section class="main-text-section width-block article">
+			<div class="container">	
+				<div class="row-wrap aic">
+					<div class="col-50">						
+						<div class="img-wrap">					
+							<img src="images/img-16.jpg" alt="">	
+						</div>							
+						</div>
+						<div class="col-50">							
+							<h3 class="subtitle mb-15">Обращайтесь к нам</h3>														
+								<p> Если Вам надо убрать <a href="">квартиру</a>, <a href="">производственные</a> или <a href="">общественные помещения</a> , выполнить <a href="">химчистку ковровых покрытий</a>, <a href="">кожаных </a>	и <a href="">меховых изделий</a> , <a href="">мягкой мебели</a>	, воспользоваться <a href="">услугами прачечной</a>. 
+									Если Вы хотите очистить фасад или вымыть окна в высотных зданиях — тоже обращайтесь, наши специалисты отлично владеют навыками промышленного альпинизма.</p>					
+						</div>
+					</div>
+				</div>
+		</section>		
+
+		
+		<section class="main-text-section width-block article">
+			<div class="container">	
+																		
+				<div class="row-wrap aic">					
+					<div class="col-50">
+						<h3 class="subtitle mb-15">Наши клиенты</h3>						
+						<p>Среди наших клиентов предприятия производственной сферы и пищевой промышленности, фармацевтической и медицинской отрасли, учреждения бюджетной сферы и аптечной сети. </p>
+						<p>Список можно продолжать долго, но лучше всего Вы сможете убедиться в нашем профессионализме, обратившись к нам самостоятельно.</p>
+					</div>
+					<div class="col-50">																			
+						<div class="img-wrap">					
+							<img src="images/img-1.jpg" alt="">	
+						</div>
+					</div>                        
+				</div>
+			</div>
+		</section>
+		
+		<section class="main-text-section width-block article">
+			<div class="container">																			
+				<div class="colwrap">					
+					<div class="col-100">
+						<h3 class="subtitle mb-15">Наши клиенты</h3>						
+						<p>Среди наших клиентов предприятия производственной сферы и пищевой промышленности, фармацевтической и медицинской отрасли, учреждения бюджетной сферы и аптечной сети. </p>
+						<p>Список можно продолжать долго, но лучше всего Вы сможете убедиться в нашем профессионализме, обратившись к нам самостоятельно.</p>
+					</div>
+					<div class="col-100">																			
+						<div class="img-wrap text-block-img-wrap">					
+							<img src="images/img-2.jpg" alt="">	
+						</div>
+					</div>
+					<div class="col-100 mt-15">												
+						<p>Среди наших клиентов предприятия производственной сферы и пищевой промышленности, фармацевтической и медицинской отрасли, учреждения бюджетной сферы и аптечной сети. </p>
+						<p>Список можно продолжать долго, но лучше всего Вы сможете убедиться в нашем профессионализме, обратившись к нам самостоятельно.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<section class="content-section mb">
+			<div class="container">
+				<h2 class="title md mb">Последние<br>новости</h2>
+				<ul class="blog__list">
+						{{ myMacros.blogtList(className="col-33 min", imgPath="images/img-10.jpg", title="Как защитить дом от посторонних пока вы в отпуске", data="11 июля 2018") }}
+						{{ myMacros.blogtList(className="col-33 min", imgPath="images/img-11.jpg", title="Как защитить дом от посторонних пока вы в отпуске", data="11 июля 2018") }}
+						{{ myMacros.blogtList(className="col-33 min", imgPath="images/img-12.jpg", title='Что нового в тарифе "Эконом"', data="11 июля 2018") }}
+				</ul>
+			</div>
+		</section>
+		
+		{% include "footer.html" %}	
+	</main>
+	 {% endblock %} 

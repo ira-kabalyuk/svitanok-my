@@ -15,14 +15,19 @@ body {
 	min-width: 320px;
 	height: 100%;	
 	overflow-x: hidden;
+	
+}
+
+.wrapper {
+	overflow: hidden;	
 }
 
 .main {
 	width: calc(100% - 268px);	
 	position: relative;
 	z-index: 1;
-	margin-left: 268px;
-	min-height: 100%;
+	margin-left: 268px;	
+
 	
     &:after {
         content: "";
@@ -46,10 +51,11 @@ body {
 		padding: 0 65px;
 	}
 }
+ 
 
 .width-block {
 	position: relative;
-    margin-left: -7px;
+    margin-left: -7px !important;
     width: calc(100% + 7px);
     z-index: 10;
 }
@@ -63,11 +69,17 @@ body {
 		width: calc(50% - 78px);
 		margin: 0 39px;
 	}
+
+	.col-25 {
+		width: calc(25% - 78px);
+		margin: 0 39px;
+	}
 }
 
 .colwrap {
 	display: flex;
 	flex-wrap: wrap;
+	width: 100%;
 
 	&.white {
 		background: #fff;
@@ -76,10 +88,18 @@ body {
 	&.shadow {
 		box-shadow: 0px 1px 16px 2px rgba(196,234,248,1);
 	}
+
+	&.br {
+		border-radius: 5px;
+	}
 }
 
 .top-block {
-	margin-top: -100px;
+	margin-top: -100px;	
+
+	&.min {
+		margin-top: -50px;	
+	}
 }
 
 .block {
@@ -92,3 +112,19 @@ body {
 		margin-bottom: 25px;
 	}
 }
+
+.pagewrap {
+	position: relative;
+	min-height: 500px;
+    display: flex;
+    align-items: center;
+
+
+	.title-img-wrap {
+		height: 500px;
+		min-height: 500px;
+		
+	}
+}
+
+

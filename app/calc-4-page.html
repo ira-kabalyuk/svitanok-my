@@ -1,0 +1,105 @@
+	{% extends "template.html" %}	
+	{% import "macros.html" as myMacros %}
+
+	{% block content %}
+	<main class="main calc-page">
+			{{ myMacros.headCalc(text="4") }}
+
+		<section class="main-content-section">
+			<div class="container">
+				<div class="top-block">
+				   <div class="colwrap shadow white">
+					   <div class="left-col">
+							<div class="block mb">
+								<h2 class="content-title">Способ оплаты</h2>
+								<div class="content-form-wrap">
+									<form action="" class="pay-form">
+										<div class="input-wrap mt">
+											<label class="control control--checkbox lg">
+												Наличными
+													<input type="checkbox" checked="checked" name="chek"/>
+													<div class="control__indicator"></div>
+											</label>
+										</div>
+										<div class="input-wrap mt">
+											<label class="control control--checkbox lg">
+													Банковской картой
+													<input type="checkbox" checked="checked" name="chek"/>
+													<div class="control__indicator"></div>
+											</label>
+										</div>										
+									</form>
+								</div>
+							</div>
+							
+
+							<div class="block mb article min">
+									<h2 class="content-title mb">Банковские карты VISA, Mastercard</h2>
+									<p class="sbd">Платежи проводятся через систему PayU</p> 
+									<p class="sbd">Платежная система PayU — международная процессинговая компания.</p>
+									<ul class="paycard__list">
+										<li class="paycard__item">
+											<div class="img-wrap">
+												<img src="images/pay-1.jpg" alt="">
+											</div>	
+										</li>
+										<li class="paycard__item">
+											<div class="img-wrap">
+												<img src="images/pay-2.jpg" alt="">
+											</div>	
+										</li>
+										<li class="paycard__item">
+											<div class="img-wrap">
+												<img src="images/pay-3.jpg" alt="">
+											</div>	
+										</li>
+										<li class="paycard__item">
+											<div class="img-wrap">
+												<img src="images/pay-4.jpg" alt="">
+											</div>	
+										</li>
+										<li class="paycard__item">
+											<div class="img-wrap">
+												<img src="images/pay-5.jpg" alt="">
+											</div>	
+										</li>
+										<li class="paycard__item">
+											<div class="img-wrap">
+												<img src="images/pay-6.jpg" alt="">
+											</div>	
+										</li>
+									</ul>
+									<p>Она сотрудничает с крупнейшими банками и российскими системами онлайн-платежей. Все данные, введенные на платежной форме процессингового центра PayU, полностью защищены в соответствии с требованиями стандарта безопасности PCI DSS.</p>
+									<p>Для оплаты покупок через банковские карты Visa, Mastercard, Visa Electron, Maestro необходимо:</p>
+
+									<ul class="article-list">
+										<li>При оформлении заказа или в личном кабинете выбрать способ "Оплата картами Visa, Mastercard".</li>
+										<li>Перейти по ссылке для оплаты заказа (нажать "перейти к оплате заказа").</li>
+										<li>Заполнить все необходимые поля, если Вы ранее не были зарегистрированы в системе PayU.</li>
+										<li>На указанный Вами при оформлении платежа адрес электронной почты будет отправлено сообщение об авторизации платежа.</li>
+										<li>После совершения платежа Вы будете перенаправлены обратно на наш сайт.</li>
+										<li>Через некоторое время оплата поступит в магазин, и с Вами свяжется оператор для подтверждения заказа.</li>										
+									</ul>	
+		
+								<div class="colwrap sb aic mob-none">
+										<button class="button yellow button--rayen md mt mb">
+												<span>Далее</span>
+										</button>
+										<a href="" class="content-link mob-min">Вернуться назад</a>
+								</div>
+							</div>
+							<div class="block">
+								<h2 class="content-title mb">Ответы на наиболее важные вопросы</h2>
+								{% include "faq-block.html" %}
+							</div>
+						
+					   </div> 
+					   {% include "right-column.html" %}	 
+				   </div>
+				</div>
+			</div>
+		</section>
+		
+		{% include "footer.html" %}	
+	</main>
+	 {% endblock %} 

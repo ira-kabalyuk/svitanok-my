@@ -1,0 +1,98 @@
+	{% extends "template.html" %}	
+	{% import "macros.html" as myMacros %}
+
+	{% block content %}
+	<main class="main calc-page">
+			{{ myMacros.headCalc(text="2") }}
+
+		<section class="main-content-section">
+			<div class="container">
+				<div class="top-block">
+				   <div class="colwrap shadow white">
+					   <div class="left-col">
+							<div class="block mb">
+								<h2 class="content-title">Как Вас зовут?</h2>
+								<div class="content-form-wrap">
+									<form action="" class="content-form">
+										<div class="input-wrap">
+											<input type="text" class="content-input" placeholder="Имя">
+										</div>
+										<div class="input-wrap">
+											<input type="text" class="content-input" placeholder="Фамилия">
+										</div>
+										<div class="input-wrap">
+											<input type="text" class="content-input" placeholder="Телефон">
+											<span class="input-text">Вам будет отправлено СМС для подтверждения. 
+													Номер используется для входа в личный кабинет.</span>
+										</div>
+										<div class="input-wrap error">
+											<input type="text" class="content-input" placeholder="E-mail">
+											<span class="error-text">Неверные данные</span>
+										</div>
+									</form>
+								</div>
+							</div>
+
+							<div class="block mb">
+								<h2 class="content-title">Адрес уборки</h2>
+								<div class="content-form-wrap">
+									<form action="" class="content-form">
+										<div class="input-wrap lang">
+											<input type="text" class="content-input" placeholder="Улица">
+											<span class="input-text">Мы не смогли проверить Ваш адрес. Это не мешает Вам продолжить оформления заказа, но, на всякий случай, 
+													проверьте корректность адреса.</span>
+										</div>
+										<div class="input-wrap min">
+											<input type="text" class="content-input" placeholder="Дом">
+										</div>
+										<div class="input-wrap min">
+											<input type="text" class="content-input" placeholder="Подъезд">												
+										</div>
+										<div class="input-wrap min">
+											<input type="text" class="content-input" placeholder="Этаж">											
+										</div>
+										<div class="input-wrap min">
+											<input type="text" class="content-input" placeholder="Квартира">											
+										</div>
+									</form>
+								</div>
+							</div>
+
+							<div class="block mb">
+									<h2 class="content-title">Комментарий</h2>
+									<div class="content-form-wrap">
+										<form action="" class="content-form">
+											<div class="input-wrap lang">
+												<textarea type="text" class="content-textarea"></textarea>												
+											</div>
+											<div class="input-wrap lang checkbox-wrap">
+												<label class="control control--checkbox">
+														Я согласен с <a href=""> условиями использования сервиса</a> и на обработку персональных данных.
+														<input type="checkbox" checked="checked"/>
+														<div class="control__indicator"></div>
+												</label>																				
+											</div>
+											<div class="colwrap sb aic">
+													<button class="button yellow button--rayen md mt mb">
+															<span>Далее</span>
+													</button>
+													<a href="" class="content-link mob-min">Вернуться назад</a>
+											</div>
+										</form>
+									</div>
+								</div>
+
+								<div class="block">
+									<h2 class="content-title mb">Ответы на наиболее важные вопросы</h2>
+									{% include "faq-block.html" %}
+								</div>
+					   </div> 
+					   {% include "right-column.html" %}	 
+				   </div>
+				</div>
+			</div>
+		</section>
+		
+		{% include "footer.html" %}	
+	</main>
+	 {% endblock %} 
